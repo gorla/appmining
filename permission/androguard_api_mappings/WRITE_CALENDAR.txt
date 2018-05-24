@@ -1,0 +1,7 @@
+<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>
+<android.content.ContentResolver: int bulkInsert(android.net.Uri,android.content.ContentValues[])>
+<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>
+<android.provider.Calendar$CalendarAlerts: android.net.Uri insert(android.content.ContentResolver,long,long,long,long,int)>
+<android.provider.Calendar$Calendars: int delete(android.content.ContentResolver,java.lang.String,java.lang.String[])>
+<android.provider.Calendar$Calendars: int deleteCalendarsForAccount(android.content.ContentResolver,android.accounts.Account)>
+<android.provider.CalendarContract$CalendarAlerts: android.net.Uri insert(android.content.ContentResolver,long,long,long,long,int)>

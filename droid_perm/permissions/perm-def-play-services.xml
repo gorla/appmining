@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PermissionDefinitions>
+    <permissionDef className="com.google.android.gms.awareness.fence.BeaconFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence found(java.util.Collection)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.BeaconFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence found(com.google.android.gms.awareness.state.BeaconState$TypeFilter[])" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.BeaconFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence lost(java.util.Collection)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.BeaconFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence lost(com.google.android.gms.awareness.state.BeaconState$TypeFilter[])" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.BeaconFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence near(java.util.Collection)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.BeaconFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence near(com.google.android.gms.awareness.state.BeaconState$TypeFilter[])" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.LocationFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence entering(double,double,double)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.LocationFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence exiting(double,double,double)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.fence.LocationFence" permissionRel="AnyOf" target="com.google.android.gms.awareness.fence.AwarenessFence in(double,double,double,long)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.SnapshotApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult getBeaconState(com.google.android.gms.common.api.GoogleApiClient,java.util.Collection)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.SnapshotApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult getBeaconState(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.awareness.state.BeaconState$TypeFilter[])" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.SnapshotApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult getLocation(com.google.android.gms.common.api.GoogleApiClient)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.SnapshotApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult getPlaces(com.google.android.gms.common.api.GoogleApiClient)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.awareness.SnapshotApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult getWeather(com.google.android.gms.common.api.GoogleApiClient)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.maps.GoogleMap" permissionRel="AnyOf" target="void setMyLocationEnabled(boolean)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.GeofencingApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult addGeofences(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.GeofencingRequest,android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="android.location.Location getLastLocation(com.google.android.gms.common.api.GoogleApiClient)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="com.google.android.gms.location.LocationAvailability getLocationAvailability(com.google.android.gms.common.api.GoogleApiClient)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult requestLocationUpdates(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.LocationRequest,android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult requestLocationUpdates(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.LocationRequest,com.google.android.gms.location.LocationCallback,android.os.Looper)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult requestLocationUpdates(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.LocationRequest,com.google.android.gms.location.LocationListener)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult requestLocationUpdates(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.LocationRequest,com.google.android.gms.location.LocationListener,android.os.Looper)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult setMockLocation(com.google.android.gms.common.api.GoogleApiClient,android.location.Location)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.FusedLocationProviderApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult setMockMode(com.google.android.gms.common.api.GoogleApiClient,boolean)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="AGGREGATE_HEART_RATE_SUMMARY" targetKind="Field">
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="AGGREGATE_LOCATION_BOUNDING_BOX" targetKind="Field">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="TYPE_DISTANCE_CUMULATIVE" targetKind="Field">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="TYPE_DISTANCE_DELTA" targetKind="Field">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="TYPE_HEART_RATE_BPM" targetKind="Field">
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="TYPE_LOCATION_SAMPLE" targetKind="Field">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="TYPE_LOCATION_TRACK" targetKind="Field">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.data.DataType" permissionRel="AnyOf" target="TYPE_SPEED" targetKind="Field">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.RecordingApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult subscribe(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataSource)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.RecordingApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult subscribe(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataType)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.SessionsApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult readSession(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.SessionReadRequest)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.HistoryApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult readDailyTotal(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataType)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.HistoryApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult readDailyTotalFromLocalDevice(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataType)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.HistoryApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult readData(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.DataReadRequest)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.HistoryApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult registerDataUpdateListener(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.DataUpdateListenerRegistrationRequest)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.SensorsApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult add(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.SensorRequest,android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.SensorsApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult add(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.SensorRequest,com.google.android.gms.fitness.request.OnDataPointListener)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.fitness.SensorsApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult findDataSources(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.DataSourcesRequest)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BODY_SENSORS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.games.Games" permissionRel="AnyOf" target="java.lang.String getCurrentAccountName(com.google.android.gms.common.api.GoogleApiClient)" targetKind="Method">
+        <permission name="android.permission.GET_ACCOUNTS"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.vision.CameraSource" permissionRel="AnyOf" target="com.google.android.gms.vision.CameraSource start()" targetKind="Method">
+        <permission name="android.permission.CAMERA"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.vision.CameraSource" permissionRel="AnyOf" target="com.google.android.gms.vision.CameraSource start(android.view.SurfaceHolder)" targetKind="Method">
+        <permission name="android.permission.CAMERA"/>
+    </permissionDef>
+    <permissionDef className="com.google.android.gms.location.places.PlaceDetectionApi" permissionRel="AnyOf" target="com.google.android.gms.common.api.PendingResult getCurrentPlace(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.places.PlaceFilter)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <checkerDefs/>
+    <requesterDefs/>
+    <parametricSensDefs/>
+</PermissionDefinitions>

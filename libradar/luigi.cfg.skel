@@ -1,0 +1,19 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[commons]
+is_remote=False
+SSH_HOST=
+SSH_PORT=
+remote_path=
+permission_mapping = ../flowdroid/permission_mapping.txt
+hostname=shuttle
+remote_root=<from local_cfg evo_data>
+
+[LibRadarRun]
+libradar_script_cmd = python2.7 /Users/paolo.calciati/Documents/LibRadar/LibRadar/libradar.py
+

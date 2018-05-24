@@ -1,0 +1,16 @@
+<android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)>
+<android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,android.os.Handler)>
+<android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)>
+<android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int,android.os.Handler)>
+<android.hardware.SensorManager: boolean registerListener(android.hardware.SensorListener,int)>
+<android.hardware.SensorManager: boolean registerListener(android.hardware.SensorListener,int,int)>
+<com.google.android.gms.fitness.HistoryApi: com.google.android.gms.common.api.PendingResult readDailyTotal(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataType)>
+<com.google.android.gms.fitness.HistoryApi: com.google.android.gms.common.api.PendingResult readDailyTotalFromLocalDevice(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataType)>
+<com.google.android.gms.fitness.HistoryApi: com.google.android.gms.common.api.PendingResult readData(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.DataReadRequest)>
+<com.google.android.gms.fitness.HistoryApi: com.google.android.gms.common.api.PendingResult registerDataUpdateListener(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.DataUpdateListenerRegistrationRequest)>
+<com.google.android.gms.fitness.RecordingApi: com.google.android.gms.common.api.PendingResult subscribe(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataSource)>
+<com.google.android.gms.fitness.RecordingApi: com.google.android.gms.common.api.PendingResult subscribe(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.data.DataType)>
+<com.google.android.gms.fitness.SensorsApi: com.google.android.gms.common.api.PendingResult add(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.SensorRequest,android.app.PendingIntent)>
+<com.google.android.gms.fitness.SensorsApi: com.google.android.gms.common.api.PendingResult add(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.SensorRequest,com.google.android.gms.fitness.request.OnDataPointListener)>
+<com.google.android.gms.fitness.SensorsApi: com.google.android.gms.common.api.PendingResult findDataSources(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.DataSourcesRequest)>
+<com.google.android.gms.fitness.SessionsApi: com.google.android.gms.common.api.PendingResult readSession(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.fitness.request.SessionReadRequest)>

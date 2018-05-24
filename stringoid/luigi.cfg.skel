@@ -1,0 +1,19 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[commons]
+is_remote=False
+SSH_HOST=
+SSH_PORT=
+remote_path=
+permission_mapping = ../flowdroid/permission_mapping.txt
+hostname=shuttle
+remote_root=<from local_cfg evo_data>
+
+[StringoidRun]
+stringoid_cmd = java -Dconfig.file=application.conf -cp stringoid-assembly-0.1.jar com.ibm.stringoid.Main -a constants --lib false --ir-source interproc -u true
+

@@ -1,0 +1,21 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[commons]
+is_remote=False
+SSH_HOST=
+SSH_PORT=
+remote_root=
+permission_mapping = ../flowdroid/permission_mapping.txt
+hostname=shuttle
+
+[InfoApk]
+# the binary file in the info_apk folder is for linux. To run on mac point to the local binary of aapt
+aapt_badging_cmd = ../info_apk/aapt_25.0.3 dump badging
+
+[InfoApp]
+androguard_api_folder = /Users/paolo.calciati/Documents/static_analysis_app/apktool/androguard_api_perm_mappings

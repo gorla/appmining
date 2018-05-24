@@ -1,0 +1,17 @@
+<android.util.LogWriter: java.io.Writer append(java.lang.CharSequence,int,int)>
+<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence,int,int)>
+<java.io.CharArrayWriter: java.io.CharArrayWriter append(char)>
+<java.io.FileWriter: java.io.Writer append(java.lang.CharSequence,int,int)>
+<java.io.FilterOutputStream: void write(byte[],int,int)>
+<java.io.FilterOutputStream: void write(int)>
+<java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)>
+<java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence,int,int)>
+<java.io.PrintStream: java.io.PrintStream append(java.lang.CharSequence)>
+<java.io.PrintWriter: java.io.Writer append(java.lang.CharSequence,int,int)>
+<java.io.StringWriter: java.io.Writer append(java.lang.CharSequence,int,int)>
+<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>
+<java.io.Writer: void write(char[])>
+<java.io.Writer: void write(char[],int,int)>
+<java.io.Writer: void write(int)>
+<java.io.Writer: void write(java.lang.String)>
+<java.io.Writer: void write(java.lang.String,int,int)>

@@ -1,0 +1,25 @@
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("TabShop", $r4), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <at.smartlab.tshop.CheckoutActivity: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<at.smartlab.tshop.ProductsActivity: void startActivity(android.content.Intent)>($r1), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <at.smartlab.tshop.ProductsActivity: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<at.smartlab.tshop.ProductsActivity: void startActivity(android.content.Intent)>($r1), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <at.smartlab.tshop.ProductsActivity: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, null, $r8, null, null), from the following sources:
+	- $r8 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <at.smartlab.tshop.CheckoutActivity: void retrieveContactData(android.net.Uri)>)
+Found a flow to sink $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, null, $r10, null, null), from the following sources:
+	- $r8 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <at.smartlab.tshop.CheckoutActivity: void retrieveContactData(android.net.Uri)>)
+Found a flow to sink virtualinvoke $r0.<com.paypal.android.MEP.PayPalActivity: void setResult(int,android.content.Intent)>($i1, $r1), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.paypal.android.MEP.PayPalActivity: void onActivityResult(int,int,android.content.Intent)>)
+	- $i1 := @parameter1: int (in <com.paypal.android.MEP.PayPalActivity: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <at.smartlab.tshop.InAppStoreActivity: void onActivityResult(int,int,android.content.Intent)>)
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.Object get(java.lang.String)>("RESPONSE_CODE") (in <com.android.vending.billing.util.IabHelper: int getResponseCodeFromIntent(android.content.Intent)>)
+Found a flow to sink $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, null, null, null, null), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <at.smartlab.tshop.CheckoutActivity: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.Object get(java.lang.String)>("RESPONSE_CODE") (in <com.android.vending.billing.util.IabHelper: int getResponseCodeFromIntent(android.content.Intent)>)
+Found a flow to sink $r9 = virtualinvoke $r3.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4), from the following sources:
+	- $r1 = virtualinvoke $r4.<java.util.Locale: java.lang.String getCountry()>() (in <com.paypal.android.MEP.PayPal: com.paypal.android.MEP.PayPal initWithAppID(android.content.Context,java.lang.String,int)>)
+	- $r6 = virtualinvoke $r4.<java.util.Locale: java.lang.String getCountry()>() (in <at.smartlab.tshop.StartActivity: void initLibrary()>)
+Maximum memory consumption: 1106.628992 MB
+Analysis has run for 13.513445087 seconds

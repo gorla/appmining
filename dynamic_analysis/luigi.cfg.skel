@@ -1,0 +1,36 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[BroAppAnalysis]
+#output_folder = /home/baixue/Androidapp/dynamic_analysis/bro_output
+#apks_folder = /home/baixue/Androidapp/dynamic_analysis/application
+
+[DomainDiff]
+#output_folder = /home/baixue/Androidapp/dynamic_analysis/bro_output/domains_diff
+
+[AppDnsMatrix]
+#output_folder = data/dns_matrix
+
+[AppDnsHeatmap]
+#output_folder = data/dns_heatmap
+domain_map = /home/baixue/Androidapp/dynamic_analysis/domain_map.txt
+#app_info_folder = /Users/paolo.calciati/Documents/evolution_data/info_apk/info_app
+
+[ExtractCoveredActivities]
+#apks_folder = /Users/paolo.calciati/Desktop/out
+#output_folder = /Users/paolo.calciati/Documents/static_analysis_app/dynamic_analysis/data/covered_activities
+
+[ExtractManifestActivities]
+#apks_folder = /Users/paolo.calciati/Desktop/out
+#output_folder = /Users/paolo.calciati/Documents/static_analysis_app/dynamic_analysis/data/manifest_activities
+
+[AppActivityCoverage]
+#output_folder = /Users/paolo.calciati/Documents/static_analysis_app/dynamic_analysis/data/coverage
+#manifest_activity_folder = /Users/paolo.calciati/Documents/static_analysis_app/info_apk/data/manifest_activities
+
+[AllAppAnalysis]
+#apks_folder = /home/baixue/Androidapp/dynamic_analysis/application

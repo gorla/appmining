@@ -1,0 +1,463 @@
+<android.telephony.TelephonyManager: java.lang.String getCompleteVoiceMailNumber()>;CALL_PRIVILEGED
+<android.telephony.TelephonyManager: java.lang.String getDeviceId()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getDeviceSoftwareVersion()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getLine1AlphaTag()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getMsisdn()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getVoiceMailAlphaTag()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getVoiceMailNumber()>;READ_PHONE_STATE
+<android.telephony.PhoneStateListener: void onCallStateChanged(int,java.lang.String)>;READ_PHONE_STATE
+<android.provider.Telephony$Mms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[])>;RECEIVE_SMS
+<android.provider.Telephony$Mms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[],java.lang.String,java.lang.String)>;RECEIVE_SMS
+<android.provider.Telephony$Sms$Intents: android.telephony.SmsMessage[] getMessagesFromIntent(android.content.Intent)>;RECEIVE_SMS
+<android.provider.Telephony$Sms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[])>;RECEIVE_SMS
+<android.provider.Telephony$Sms: android.database.Cursor query(android.content.ContentResolver,java.lang.String[],java.lang.String,java.lang.String)>;RECEIVE_SMS
+<android.location.Location: double getLatitude()>;ACCESS_LOCATION
+<android.location.Location: double getLongitude()>;ACCESS_LOCATION
+<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>;ACCESS_LOCATION
+<android.location.LocationManager: android.location.Location getLocation(java.lang.String)>;ACCESS_LOCATION
+<android.location.LocationManager: android.location.LocationProvider getProvider(java.lang.String)>;ACCESS_LOCATION
+<android.location.LocationManager: java.lang.String getBestProvider(android.location.Criteria,boolean)>;ACCESS_LOCATION
+<android.location.LocationManager: void requestLocationUpdates(java.lang.String, long, float, android.app.PendingIntent)>;ACCESS_LOCATION
+<android.location.LocationManager: void requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)>;ACCESS_LOCATION
+<android.telephony.TelephonyManager: android.telephony.CellLocation getCellLocation()>;ACCESS_LOCATION
+<android.media.ExifInterface: boolean getLatLong(float[])>;READ_EXTERNAL_STORAGE
+<android.media.ExifInterface: byte[] getThumbnail()>;READ_EXTERNAL_STORAGE
+<android.provider.Contacts$People: android.database.Cursor queryGroups(android.content.ContentResolver,long)>;READ_CONTACTS
+<android.provider.Contacts$People: android.net.Uri addToGroup(android.content.ContentResolver,long,java.lang.String)>;READ_CONTACTS
+<android.provider.Contacts$People: long tryGetMyContactsGroupId(android.content.ContentResolver)>;READ_CONTACTS
+<android.provider.Contacts$Settings: java.lang.String getSetting(android.content.ContentResolver,java.lang.String,java.lang.String)>;READ_CONTACTS
+<android.provider.ContactsContract$Contacts: java.io.InputStream openContactPhotoInputStream(android.content.ContentResolver,android.net.Uri,boolean)>;READ_CONTACTS
+<android.provider.ContactsContract$Groups$EntityIteratorImpl: android.content.Entity getEntityAndIncrementCursor(android.database.Cursor)>;READ_CONTACTS
+<android.provider.ContactsContract$RawContacts$EntityIteratorImpl: android.content.Entity getEntityAndIncrementCursor(android.database.Cursor)>;READ_CONTACTS
+<android.accounts.AccountManager: android.accounts.AccountManager get(android.content.Context)>;GET_ACCOUNTS
+<android.accounts.AccountManager: android.accounts.Account[] getAccounts()>;GET_ACCOUNTS
+<android.accounts.AccountManager: android.accounts.Account[] getAccountsByType(java.lang.String)>;GET_ACCOUNTS
+<android.provider.Browser: android.database.Cursor getAllVisitedUrls(android.content.ContentResolver)>;READ_HISTORY_BOOKMARKS
+<android.provider.Browser: java.lang.String[] getVisitedHistory(android.content.ContentResolver)>;READ_HISTORY_BOOKMARKS
+<android.net.ConnectivityManager: android.net.LinkProperties getActiveLinkProperties()>;NP_ACCESS_NETWORK_STATE
+<android.net.ConnectivityManager: android.net.LinkProperties getLinkProperties(int)>;NP_ACCESS_NETWORK_STATE
+<android.net.ConnectivityManager: android.net.NetworkInfo getActiveNetworkInfo()>;NP_ACCESS_NETWORK_STATE
+<android.net.ConnectivityManager: android.net.NetworkInfo getActiveNetworkInfoForUid(int)>;NP_ACCESS_NETWORK_STATE
+<android.net.ConnectivityManager: android.net.NetworkInfo getNetworkInfo(int)>;NP_ACCESS_NETWORK_STATE
+<android.net.ConnectivityManager: android.net.NetworkInfo[] getAllNetworkInfo()>;NP_ACCESS_NETWORK_STATE
+<android.net.ConnectivityManager: android.net.NetworkQuotaInfo getActiveNetworkQuotaInfo()>;NP_ACCESS_NETWORK_STATE
+<android.telephony.TelephonyManager: java.util.List getNeighboringCellInfo()>;NP_ACCESS_COARSE_UPDATES
+<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)>;NP_PACKAGE_MANAGER
+<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>;NP_PACKAGE_MANAGER
+<android.content.pm.PackageManager: java.util.List queryBroadcastReceivers(android.content.Intent,int)>;NP_PACKAGE_MANAGER
+<android.content.pm.PackageManager: java.util.List queryContentProviders(java.lang.String,int,int)>;NP_PACKAGE_MANAGER
+<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>;NP_PACKAGE_MANAGER
+<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>;NP_PACKAGE_MANAGER
+<android.media.AudioRecord: int read(byte[],int,int)>;RECORD_AUDIO
+<android.media.AudioRecord: int read(java.nio.ByteBuffer,int)>;RECORD_AUDIO
+<android.media.AudioRecord: int read(short[],int,int)>;RECORD_AUDIO
+<java.io.FileInputStream: java.nio.channels.FileChannel getChannel()>;NP_FILE
+<java.io.FileOutputStream: java.nio.channels.FileChannel  getChannel()>;NP_FILE
+<java.io.RandomAccessFile: java.nio.channels.FileChannel getChannel()>;NP_FILE
+<android.content.ContentResolver: java.io.InputStream openInputStream(Uri)>;NP_FILE
+<java.io.File: void <init>(java.net.URI)>;NP_FILE
+<java.io.FileInputStream: void <init>(java.io.FileDescriptor)>;NP_FILE
+<android.os.FileUtils: java.lang.String readTextFile(java.io.File,int,java.lang.String)>;NP_FILE
+<android.hardware.SensorManager: float getAltitude(float,float)>;NP_SENSOR
+<android.hardware.SensorManager: float getInclination(float[])>;NP_SENSOR
+<android.hardware.SensorManager: float[] getOrientation(float[],float[])>;NP_SENSOR
+<android.hardware.usb.UsbDevice: int getDeviceId()>;NP_SENSOR
+<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>;NP_CONTENT_RESOLVER
+<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>;NP_CONTENT_RESOLVER
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>;NP_CONTENT_RESOLVER
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>;NP_CONTENT_RESOLVER
+<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)>;SEND_SMS
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>;SEND_SMS
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)>;SEND_SMS
+<android.telephony.SmsManager: void sendMultimediaMessage(android.content.Context,android.net.Uri,java.lang.String,android.os.Bundle,android.app.PendingIntent)>;SEND_SMS
+<android.accounts.AccountManager: boolean addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle)>;NAN
+<android.accounts.IAccountManager$Stub$Proxy: boolean addAccount(android.accounts.Account,java.lang.String,android.os.Bundle)>;NAN
+<android.accounts.IAccountManager$Stub$Proxy: void addAcount(android.accounts.IAccountManagerResponse,java.lang.String,java.lang.String,java.lang.String[],boolean,android.os.Bundle)>;NAN
+<android.content.ContentProviderProxy: android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String)>;NP_FILE
+<android.os.FileUtils: boolean copyToFile(java.io.InputStream,java.io.File)>;NP_FILE
+<android.os.FileUtils: void stringToFile(java.lang.String,java.lang.String)>;NP_FILE
+<java.io.FileOutputStream: void write(byte[],int,int)>;NP_FILE
+<java.io.FileOutputStream: void write(int)>;NP_FILE
+<java.io.RandomAccessFile: void write(byte[],int,int)>;NP_FILE
+<java.lang.ProcessManager: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File,boolean)>;NP_EXECUTE
+<android.net.ConnectivityManager: void setGlobalProxy(android.net.ProxyProperties)>;CONNECTIVITY_INTERNAL
+<android.net.http.Headers: void setAcceptRanges(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setCacheControl(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setContentDisposition(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setContentEncoding(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setContentType(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setEtag(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setExpires(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setLastModified(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setLocation(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setProxyAuthenticate(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setWwwAuthenticate(java.lang.String)>;INTERNET
+<android.net.http.Headers: void setXPermittedCrossDomainPolicies(java.lang.String)>;INTERNET
+<android.net.LocalSocketImpl$SocketOutputStream: void write(byte[])>;INTERNET
+<android.net.http.HttpsConnection: android.net.http.AndroidHttpClientConnection openConnection(android.net.http.Request)>;INTERNET
+<android.net.http.RequestQueue: void queueRequest(android.net.http.Request,boolean)>;INTERNET
+<org.apache.http.impl.client.AbstractHttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest)>;INTERNET
+<org.apache.http.impl.client.AbstractHttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)>;INTERNET
+<org.apache.http.impl.client.AbstractHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<org.apache.http.impl.client.AbstractHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)>;INTERNET
+<java.net.URL: java.io.InputStream openStream()>;INTERNET
+<java.net.URL: java.net.URLConnection openConnection()>;INTERNET
+<android.app.ContextImpl: FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<android.content.ContextWrapper: java.io.FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor open(java.io.File,int)>;NP_FILE
+<java.io.FilterOutputStream: void write(byte[],int,int)>;NP_FILE
+<java.io.FilterOutputStream: void write(int)>;NP_FILE
+<java.io.PrintStream: java.io.PrintStream append(java.lang.CharSequence)>;NP_FILE
+<java.io.CharArrayWriter: java.io.CharArrayWriter append(char)>;NP_FILE
+<java.io.PrintWriter: java.io.Writer append(java.lang.CharSequence,int,int)>;NP_FILE
+<java.io.FileWriter: java.io.Writer append(java.lang.CharSequence,int,int)>;NP_FILE
+<java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence,int,int)>;NP_FILE
+<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence,int,int)>;NP_FILE
+<android.util.LogWriter: java.io.Writer append(java.lang.CharSequence,int,int)>;NP_FILE
+<java.io.StringWriter: java.io.Writer append(java.lang.CharSequence,int,int)>;NP_FILE
+<java.io.FileOutputStream: void write(byte[])>;NP_FILE
+<java.io.Writer: void write(char[])>;NP_FILE
+<java.io.Writer: void write(java.lang.String)>;NP_FILE
+<java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)>;NP_FILE
+<java.io.Writer: java.io.Writer append(java.lang.CharSequence)>;NP_FILE
+<java.io.Writer: void write(char[],int,int)>;NP_FILE
+<java.io.Writer: void write(int)>;NP_FILE
+<java.io.Writer: void write(java.lang.String,int,int)>;NP_FILE
+<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>;INTERNET
+<android.util.Log: int d(java.lang.String,java.lang.String)>;LOG
+<android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Log: int e(java.lang.String,java.lang.String)>;LOG
+<android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Log: int i(java.lang.String,java.lang.String)>;LOG
+<android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Log: int println(int,java.lang.String,java.lang.String)>;LOG
+<android.util.Log: int v(java.lang.String,java.lang.String)>;LOG
+<android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Log: int w(java.lang.String,java.lang.String)>;LOG
+<android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Log: int w(java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Log: int wtf(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Slog: int d(java.lang.String,java.lang.String)>;LOG
+<android.util.Slog: int d(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Slog: int e(java.lang.String,java.lang.String)>;LOG
+<android.util.Slog: int e(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Slog: int i(java.lang.String,java.lang.String)>;LOG
+<android.util.Slog: int i(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Slog: int println(int,java.lang.String,java.lang.String)>;LOG
+<android.util.Slog: int v(java.lang.String,java.lang.String)>;LOG
+<android.util.Slog: int v(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Slog: int w(java.lang.String,java.lang.String)>;LOG
+<android.util.Slog: int w(java.lang.String,java.lang.String,java.lang.Throwable)>;LOG
+<android.util.Slog: int w(java.lang.String,java.lang.Throwable)>;LOG
+<android.content.Intent>;NP_INTENT
+<java.io.BufferedWriter: void write(java.lang.String)>;NP_FILE
+<android.content.SharedPreferences>;NP_SHARED_PREF
+<android.telephony.TelephonyManager: java.lang.String getNetworkOperatorName()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getSimOperator()>;READ_PHONE_STATE
+<android.telephony.gsm.GsmCellLocation: int getCid()>;NAN
+<int>;NAN
+<android.telephony.gsm.GsmCellLocation: int getLac()>;NAN
+<java.io.DataOutputStream: void write(int)>;NP_FILE
+<android.telephony.SmsMessage: java.lang.String getOriginatingAddress()>;NAN
+<android.telephony.PhoneNumberUtils: byte[] numberToCalledPartyBCD(java.lang.String)>;NAN
+<android.telephony.PhoneNumberUtils: java.lang.String getNumberFromIntent(android.content.Intent,android.content.Context)>;NAN
+<android.telephony.PhoneNumberUtils: java.lang.String getStrippedReversed(java.lang.String)>;NAN
+<android.telephony.PhoneNumberUtils: java.lang.String getUsernameFromUriNumber(java.lang.String)>;NAN
+<android.telephony.TelephonyManager: java.lang.String getIsimDomain()>;NAN
+<android.telephony.TelephonyManager: java.lang.String getIsimImpi()>;NAN
+<android.telephony.SmsMessage: byte[] getPdu()>;NAN
+<android.telephony.SmsMessage: byte[] getUserData()>;NAN
+<android.telephony.SmsMessage: int getIndexOnIcc()>;NAN
+<android.telephony.SmsMessage: int getIndexOnSim()>;NAN
+<android.telephony.SmsMessage: int getProtocolIdentifier()>;NAN
+<android.telephony.SmsMessage: int getStatus()>;NAN
+<android.telephony.SmsMessage: int getStatusOnIcc()>;NAN
+<android.telephony.SmsMessage: int getStatusOnSim()>;NAN
+<android.telephony.SmsMessage: int getTPLayerLengthForPDU(java.lang.String)>;NAN
+<android.telephony.SmsMessage: java.lang.String getDisplayMessageBody()>;NAN
+<android.telephony.SmsMessage: java.lang.String getDisplayOriginatingAddress()>;NAN
+<android.telephony.SmsMessage: java.lang.String getEmailBody()>;NAN
+<android.telephony.SmsMessage: java.lang.String getEmailFrom()>;NAN
+<android.telephony.SmsMessage: java.lang.String getMessageBody()>;NAN
+<android.telephony.SmsMessage: java.lang.String getOriginatingAddress()>;NAN
+<android.telephony.SmsMessage: java.lang.String getPseudoSubject()>;NAN
+<android.telephony.SmsMessage: java.lang.String getServiceCenterAddress()>;NAN
+<android.telephony.SmsMessage: long getTimestampMillis()>;NAN
+<android.telephony.SmsManager: java.util.ArrayList getAllMessagesFromIcc()>;NAN
+<android.location.Address: double getLatitude()>;NAN
+<android.location.Address: double getLongitude()>;NAN
+<android.location.Address: java.lang.String getAddressLine(int)>;NAN
+<android.location.Address: java.lang.String getAdminArea()>;NAN
+<android.location.Address: java.lang.String getCountryCode()>;NAN
+<android.location.Address: java.lang.String getCountryName()>;NAN
+<android.location.Address: java.lang.String getFeatureName()>;NAN
+<android.location.Address: java.lang.String getLocality()>;NAN
+<android.location.Address: java.lang.String getPhone()>;NAN
+<android.location.Address: java.lang.String getPostalCode()>;NAN
+<android.location.Address: java.lang.String getPremises()>;NAN
+<android.location.Address: java.lang.String getSubAdminArea()>;NAN
+<android.location.Address: java.lang.String getSubLocality()>;NAN
+<android.location.Address: java.lang.String getSubThoroughfare()>;NAN
+<android.location.Address: java.lang.String getThoroughfare()>;NAN
+<android.location.Address: java.lang.String getUrl()>;NAN
+<android.location.Address: java.util.Locale getLocale()>;NAN
+<android.location.Location: double getAltitude()>;NAN
+<android.location.Location: float getBearing()>;NAN
+<android.location.Location: float getSpeed()>;NAN
+<android.location.Location: java.lang.String getProvider()>;NAN
+<android.location.Location: long getTime()>;NAN
+<android.location.LocationManager: android.location.GpsStatus getGpsStatus(android.location.GpsStatus)>;NAN
+<android.location.LocationManager: java.util.List getAllProviders()>;NAN
+<android.telephony.cdma.CdmaCellLocation: int getBaseStationId()>;NAN
+<android.telephony.cdma.CdmaCellLocation: int getBaseStationLatitude()>;NAN
+<android.telephony.cdma.CdmaCellLocation: int getBaseStationLongitude()>;NAN
+<android.telephony.cdma.CdmaCellLocation: int getNetworkId()>;NAN
+<android.telephony.cdma.CdmaCellLocation: int getSystemId()>;NAN
+<android.telephony.gsm.GsmCellLocation: int getCid()>;NAN
+<android.telephony.gsm.GsmCellLocation: int getLac()>;NAN
+<android.telephony.gsm.GsmCellLocation: int getPsc()>;NAN
+<android.app.ActivityManagerProxy: android.os.ParcelFileDescriptor openContentUri(android.net.Uri)>;NAN
+<android.provider.Contacts$ContactMethods: java.lang.CharSequence getDisplayLabel(android.content.Context,int,int,java.lang.CharSequence)>;NAN
+<android.provider.Contacts$Organizations: java.lang.CharSequence getDisplayLabel(android.content.Context,int,java.lang.CharSequence)>;NAN
+<android.provider.Contacts$Phones: java.lang.CharSequence getDisplayLabel(android.content.Context,int,java.lang.CharSequence)>;NAN
+<android.provider.Contacts$Phones: java.lang.CharSequence getDisplayLabel(android.content.Context,int,java.lang.CharSequence,java.lang.CharSequence[])>;NAN
+<android.provider.ContactsContract$CommonDataKinds$Phone: java.lang.CharSequence getDisplayLabel(android.content.Context,int,java.lang.CharSequence)>;NAN
+<android.provider.ContactsContract$CommonDataKinds$Phone: java.lang.CharSequence getDisplayLabel(android.content.Context,int,java.lang.CharSequence,java.lang.CharSequence[])>;NAN
+<android.provider.ContactsContract$Contacts: android.net.Uri getLookupUri(android.content.ContentResolver,android.net.Uri)>;NAN
+<android.provider.ContactsContract$Contacts: android.net.Uri getLookupUri(long,java.lang.String)>;NAN
+<android.provider.ContactsContract$Contacts: android.net.Uri lookupContact(android.content.ContentResolver,android.net.Uri)>;NAN
+<android.provider.ContactsContract$Data: android.net.Uri getContactLookupUri(android.content.ContentResolver,android.net.Uri)>;NAN
+<android.provider.ContactsContract$ProfileSyncState: android.util.Pair getWithUri(android.content.ContentProviderClient,android.accounts.Account)>;NAN
+<android.provider.ContactsContract$ProfileSyncState: byte[] get(android.content.ContentProviderClient,android.accounts.Account)>;NAN
+<android.provider.ContactsContract$RawContacts: android.net.Uri getContactLookupUri(android.content.ContentResolver,android.net.Uri)>;NAN
+<android.provider.ContactsContract$SyncState: android.util.Pair getWithUri(android.content.ContentProviderClient,android.accounts.Account)>;NAN
+<android.provider.ContactsContract$SyncState: byte[] get(android.content.ContentProviderClient,android.accounts.Account)>;NAN
+<android.accounts.Account: java.lang.String toString()>;NAN
+<android.accounts.IAccountManager$Stub$Proxy: android.accounts.Account[] getAccounts(java.lang.String)>;NAN
+<android.accounts.IAccountManager$Stub$Proxy: java.lang.String getPassword(android.accounts.Account)>;NAN
+<android.accounts.IAccountManager$Stub$Proxy: java.lang.String getUserData(android.accounts.Account,java.lang.String)>;NAN
+<android.webkit.BrowserFrame: android.webkit.CallbackProxy getCallbackProxy()>;NAN
+<android.webkit.BrowserFrame: java.lang.String getUserAgentString()>;NAN
+<android.net.ConnectivityManager: android.net.ProxyProperties getGlobalProxy()>;NAN
+<android.net.ConnectivityManager: android.net.ProxyProperties getProxy()>;NAN
+<android.net.ConnectivityManager: java.lang.String getNetworkTypeName(int)>;NAN
+<android.net.LinkProperties: android.net.ProxyProperties getHttpProxy()>;NAN
+<android.net.LinkProperties: java.lang.String getInterfaceName()>;NAN
+<android.net.LinkProperties: java.util.Collection getAddresses()>;NAN
+<android.net.LinkProperties: java.util.Collection getDnses()>;NAN
+<android.net.LinkProperties: java.util.Collection getLinkAddresses()>;NAN
+<android.net.LinkProperties: java.util.Collection getRoutes()>;NAN
+<android.net.LocalServerSocket: android.net.LocalSocketAddress getLocalSocketAddress()>;NAN
+<android.net.LocalServerSocket: java.io.FileDescriptor getFileDescriptor()>;NAN
+<android.net.TrafficStats: int getThreadStatsTag()>;NAN
+<android.net.TrafficStats: long getMobileRxBytes()>;NAN
+<android.net.TrafficStats: long getMobileRxPackets()>;NAN
+<android.net.TrafficStats: long getMobileTxBytes()>;NAN
+<android.net.TrafficStats: long getMobileTxPackets()>;NAN
+<android.net.TrafficStats: long getRxBytes(java.lang.String)>;NAN
+<android.net.TrafficStats: long getRxPackets(java.lang.String)>;NAN
+<android.net.TrafficStats: long getTotalRxBytes()>;NAN
+<android.net.TrafficStats: long getTotalRxPackets()>;NAN
+<android.net.TrafficStats: long getTotalTxBytes()>;NAN
+<android.net.TrafficStats: long getTotalTxPackets()>;NAN
+<android.net.TrafficStats: long getTxBytes(java.lang.String)>;NAN
+<android.net.TrafficStats: long getTxPackets(java.lang.String)>;NAN
+<android.net.wifi.WifiInfo: boolean getHiddenSSID()>;NAN
+<android.net.wifi.WifiInfo: int getIpAddress()>;NAN
+<android.net.wifi.WifiInfo: int getLinkSpeed()>;NAN
+<android.net.wifi.WifiInfo: int getNetworkId()>;NAN
+<android.net.wifi.WifiInfo: int getRssi()>;NAN
+<android.net.wifi.WifiInfo: java.lang.String getBSSID()>;NAN
+<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>;NAN
+<android.net.wifi.WifiInfo: java.lang.String getSSID()>;NAN
+<android.net.wifi.WifiManager: android.net.DhcpInfo getDhcpInfo()>;NAN
+<android.net.wifi.WifiManager: android.net.wifi.WifiConfiguration getWifiApConfiguration()>;NAN
+<android.net.wifi.WifiManager: android.net.wifi.WifiInfo getConnectionInfo()>;NAN
+<android.net.wifi.WifiManager: int getFrequencyBand()>;NAN
+<android.net.wifi.WifiManager: int getWifiApState()>;NAN
+<android.net.wifi.WifiManager: int getWifiState()>;NAN
+<android.net.wifi.WifiManager: java.lang.String getConfigFile()>;NAN
+<android.net.wifi.WifiManager: java.util.List getConfiguredNetworks()>;NAN
+<android.net.wifi.WifiManager: java.util.List getScanResults()>;NAN
+<android.telephony.NeighboringCellInfo: int getCid()>;NAN
+<android.telephony.NeighboringCellInfo: int getLac()>;NAN
+<android.telephony.NeighboringCellInfo: int getNetworkType()>;NAN
+<android.telephony.NeighboringCellInfo: int getPsc()>;NAN
+<android.telephony.NeighboringCellInfo: int getRssi()>;NAN
+<android.telephony.NeighboringCellInfo: java.lang.String toString()>;NAN
+<android.telephony.ServiceState: java.lang.String getOperatorAlphaLong()>;NAN
+<android.telephony.ServiceState: java.lang.String getOperatorAlphaShort()>;NAN
+<android.telephony.ServiceState: java.lang.String getOperatorNumeric()>;NAN
+<android.telephony.ServiceState: java.lang.String toString()>;NAN
+<android.webkit.CookieManager: java.lang.String getCookie(android.net.WebAddress)>;COOKIES
+<android.webkit.CookieManager: java.lang.String getCookie(java.lang.String)>;COOKIES
+<android.webkit.CookieManager: java.lang.String getCookie(java.lang.String,boolean)>;COOKIES
+<android.view.KeyEvent>;NAN
+<android.app.Activity>;NAN
+<android.animation.Animator>;NAN
+<android.app.job.JobParameters>;NAN
+<android.content.ContentValues>;NAN
+<android.content.Context>;NAN
+<android.content.Loader>;NAN
+<android.content.res.Configuration>;NAN
+<android.hardware.SensorEvent>;NAN
+<android.location.Location>;NAN
+<android.media.MediaPlayer>;NAN
+<android.net.Uri>;NAN
+<android.os.Bundle>;NAN
+<android.preference.Preference>;NAN
+<android.support.v4.app.Fragment>;NAN
+<android.telephony.TelephonyManager;NAN
+<android.view.Menu>;NAN
+<android.view.MenuItem>;NAN
+<android.view.MotionEvent>;NAN
+<android.view.View>;NAN
+<android.view.accessibility.AccessibilityEvent>;NAN
+<android.view.inputmethod.CompletionInfo[]>;NAN
+<android.view.inputmethod.EditorInfo>;NAN
+<boolean>;NAN
+<byte[]>;NAN
+<char>;NAN
+<com.bitsmedia.android.muslimpro.Location;NAN
+<com.bitsmedia.android.muslimpro.i;NAN
+<com.unionpay.mobile.android.model.d>;NAN
+<int[]>;NAN
+<java.io.FileOutputStream;NAN
+<java.lang.Object>;NAN
+<java.lang.Object[]>;NAN
+<java.lang.String>;NAN
+<java.lang.String[]>;NAN
+<--------->;--------------
+<ecz: void write(int)>;NP_FILE
+<edn: void write(int)>;NP_FILE
+<edt: void write(int)>;NP_FILE
+<edw: void write(int)>;NP_FILE
+<eec: void write(int)>;NP_FILE
+<eed: void write(int)>;NP_FILE
+<eei: void write(int)>;NP_FILE
+<eez: void write(int)>;NP_FILE
+<eix: void write(int)>;NP_FILE
+<eyk: void write(int)>;NP_FILE
+<fep: void write(int)>;NP_FILE
+<fqo: void write(int)>;NP_FILE
+<java.io.BufferedOutputStream: void write(byte[],int,int)>;NP_FILE
+<java.io.BufferedOutputStream: void write(int)>;NP_FILE
+<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>;NP_FILE
+<java.io.BufferedWriter: void write(char[],int,int)>;NP_FILE
+<java.io.DataOutputStream: void write(byte[],int,int)>;NP_FILE
+<java.io.FileWriter: java.io.Writer append(java.lang.CharSequence)>;NP_FILE
+<java.io.FileWriter: void write(java.lang.String)>;NP_FILE
+<java.io.FileWriter: void write(java.lang.String,int,int)>;NP_FILE
+<java.io.OutputStreamWriter: void write(char[],int,int)>;NP_FILE
+<java.io.OutputStreamWriter: void write(java.lang.String)>;NP_FILE
+<java.io.PrintWriter: void write(java.lang.String)>;NP_FILE
+<java.io.StringWriter: void write(char[],int,int)>;NP_FILE
+<java.io.StringWriter: void write(int)>;NP_FILE
+<java.io.StringWriter: void write(java.lang.String)>;NP_FILE
+<--------->;-------------
+<java.io.Writer: void write(java.lang.String)>("</stream:stream>;NP_FILE
+<java.net.HttpURLConnection: void setRequestProperty(java.lang.String,java.lang.String)>;INTERNET
+<java.util.zip.GZIPOutputStream: void write(byte[],int,int)>;NP_FILE
+<java.util.zip.ZipOutputStream: void write(byte[],int,int)>;NP_FILE
+<javax.net.ssl.HttpsURLConnection: void setRequestProperty(java.lang.String,java.lang.String)>;INTERNET
+<jp.naver.common.android.image.AndroidHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<nc: void write(int)>;NP_FILE
+<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)>;INTERNET
+<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest)>;INTERNET
+<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)>;INTERNET
+<org.interlaken.b.b.a: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<pO: void write(int)>;NP_FILE
+<pR: void write(int)>;NP_FILE
+<px: void write(int)>;NP_FILE
+<sO: void write(int)>;NP_FILE
+<sQ: void write(int)>;NP_FILE
+<sS: void write(int)>;NP_FILE
+<sT: void write(int)>;NP_FILE
+<sW: void write(int)>;NP_FILE
+<td: void write(int)>;NP_FILE
+<wG: void write(int)>;NP_FILE
+<wH: void write(int)>;NP_FILE
+<xr: void write(int)>;NP_FILE
+<yy: void write(int)>;NP_FILE
+<android.app.Fragment>;NAN
+<android.appwidget.AppWidgetManager>;NAN
+<android.bluetooth.BluetoothProfile>;NAN
+<android.content.ContentValues[]>;NAN
+<android.content.IntentFilter>;NAN
+<android.content.pm.ProviderInfo>;NAN
+<android.service.notification.StatusBarNotification>;NAN
+<android.telephony.TelephonyManager: int getNetworkType()>;NAN
+<android.telephony.TelephonyManager: int getPhoneType()>;NAN
+<android.telephony.TelephonyManager: int getSimState()>;NAN
+<android.telephony.TelephonyManager: java.lang.String getNetworkCountryIso()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getNetworkOperator()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getSimCountryIso()>;READ_PHONE_STATE
+<android.telephony.TelephonyManager: java.lang.String getSimOperatorName()>;READ_PHONE_STATE
+<android.view.ContextMenu$ContextMenuInfo>;NAN
+<android.widget.TimePicker>;NAN
+<com.bitsmedia.android.muslimpro.i: double getLatitude()>;ACCESS_LOCATION
+<com.bitsmedia.android.muslimpro.i: double getLongitude()>;ACCESS_LOCATION
+<com.bitsmedia.android.muslimpro.Location: double getLatitude()>;ACCESS_LOCATION
+<com.bitsmedia.android.muslimpro.Location: double getLongitude()>;ACCESS_LOCATION
+<com.google.android.gms.wearable.DataEventBuffer>;NAN
+<com.google.android.gms.wearable.MessageEvent>;NAN
+<com.google.android.gms.wearable.Node>;NAN
+<float>;NAN
+<java.io.FileOutputStream: java.nio.channels.FileChannel getChannel()>;NP_FILE
+<java.util.ArrayList>;NAN
+<long>;NAN
+<scala.Function0>;NAN
+<spray.json.JsonFormat>;NAN
+<android.net.http.AndroidHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<com.mobvista.msdk.base.b.b.i: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<android.app.Activity: java.io.FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<android.app.Application: java.io.FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<android.net.http.AndroidHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<android.net.http.AndroidHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<bms: void write(int)>;NP_FILE
+<bmu: void write(int)>;NP_FILE
+<bok: void write(int)>;NP_FILE
+<com.andrewshu.android.reddit.browser.download.DownloadService: java.io.FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<com.appnext.appnextsdk.DownloadService: java.io.FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<com.appnext.appnextsdk.DownloadService: java.io.FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<com.appnext.appnextsdk.DownloadService: java.io.FileOutputStream openFileOutput(java.lang.String,int)>;NP_FILE
+<com.baidu.android.common.b.b: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<com.baidu.android.common.net.ProxyHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<com.c.a.a.ab: void write(int)>;NP_FILE
+<com.d.a.a.ab: void write(int)>;NP_FILE
+<com.getjar.sdk.comm.GetJarHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<com.github.kevinsawicki.http.d: void write(int)>;NP_FILE
+<com.github.kevinsawicki.http.e: void write(int)>;NP_FILE
+<com.kakao.talk.leo.eyhtikrkbf: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<com.kakao.talk.nck.eyhtikrkbf: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<com.kakao.talk.sdhwkxyuak.zgewwogrsg: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>;INTERNET
+<dca$d: void write(int)>;NP_FILE
+<deg$d: void write(int)>;NP_FILE
+<duv: void write(int)>;NP_FILE
+<dvb: void write(int)>;NP_FILE
+<dzw: void write(int)>;NP_FILE
+<dzz: void write(int)>;NP_FILE
+<*CONTENT_RESOLVER=content://calendar>;*READ_CALENDAR
+<*CONTENT_RESOLVER=content://call_log/calls>;*READ_CALL_LOG
+<*CONTENT_RESOLVER=content://downloads/public_downloads>;*NP_DOWNLOADS
+<*CONTENT_RESOLVER=content://media/>;*READ_EXTERNAL_STORAGE
+<*CONTENT_RESOLVER=content://mms>;*READ_SMS
+<*CONTENT_RESOLVER=content://sms>;*READ_SMS
+<*CONTENT_RESOLVER=content://sms/inbox>;*READ_SMS
+<*CONTENT_RESOLVER=content://sync/settings>;*READ_SYNC_SETTINGS
+<CONTENT_RESOLVER=content://com.cmcm.channel/channel>; NP_CUSTOM
+<CONTENT_RESOLVER=content://com.facebook.katana.provider.AttributionIdProvider>;NP_CUSTOM
+<CONTENT_RESOLVER=content://com.jiubang.commerce.tokencoin.database.TokenCoinProvider/appadstateinfo>;NP_CUSTOM
+<CONTENT_RESOLVER=content://com.ninefolders.hd3.log>;NP_CUSTOM
+<CONTENT_RESOLVER=content://com.tumblr/timeline>;NP_CUSTOM
+<CONTENT_RESOLVER=content://contacts>;READ_CONTACTS
+<CONTENT_RESOLVER=content://downloads/public_downloads>;NP_DOWNLOADS
+<CONTENT_RESOLVER=content://home.solo.launcher.free.settings/oftenusedapp>;NP_CUSTOM
+<CONTENT_RESOLVER=content://media/external/audio/playlists>;READ_EXTERNAL_STORAGE
+<CONTENT_RESOLVER=content://media/phoneStorage/audio/media>;READ_EXTERNAL_STORAGE
+<CONTENT_RESOLVER=content://telephony/carriers/preferapn>;WRITE_APN_SETTINGS

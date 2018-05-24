@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PermissionDefinitions>
+    <permissionDef className="android.accounts.AccountManager" target="android.accounts.AccountManagerFuture getAccountsByTypeAndFeatures(java.lang.String, java.lang.String[], android.accounts.AccountManagerCallback, android.os.Handler)" targetKind="Method">
+        <permission name="android.permission.GET_ACCOUNTS"/>
+    </permissionDef>
+    <permissionDef className="android.accounts.AccountManager" target="android.accounts.AccountManagerFuture hasFeatures(android.accounts.Account, java.lang.String[], android.accounts.AccountManagerCallback, android.os.Handler)" targetKind="Method">
+        <permission name="android.permission.GET_ACCOUNTS"/>
+    </permissionDef>
+    <permissionDef className="android.accounts.AccountManager" target="android.accounts.Account[] getAccounts()" targetKind="Method">
+        <permission name="android.permission.GET_ACCOUNTS"/>
+    </permissionDef>
+    <permissionDef className="android.accounts.AccountManager" target="android.accounts.Account[] getAccountsByType(java.lang.String)" targetKind="Method">
+        <permission name="android.permission.GET_ACCOUNTS"/>
+    </permissionDef>
+    <permissionDef className="android.accounts.AccountManager" target="void addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener, android.os.Handler, boolean)" targetKind="Method">
+        <permission name="android.permission.GET_ACCOUNTS"/>
+    </permissionDef>
+    <permissionDef className="android.content.Intent" target="ACTION_CALL" targetKind="Field">
+        <permission name="android.permission.CALL_PHONE"/>
+    </permissionDef>
+    <permissionDef className="android.hardware.camera2.CameraManager" target="void openCamera(java.lang.String, android.hardware.camera2.CameraDevice$StateCallback, android.os.Handler)" targetKind="Method">
+        <permission name="android.permission.CAMERA"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="android.location.Location getLastKnownLocation(java.lang.String)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" target="boolean addGpsStatusListener(android.location.GpsStatus$Listener)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" target="boolean addNmeaListener(android.location.GpsStatus$NmeaListener)" targetKind="Method">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void addProximityAlert(double, double, float, long, android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestLocationUpdates(java.lang.String, long, float, android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestLocationUpdates(java.lang.String, long, float, android.location.LocationListener)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestLocationUpdates(java.lang.String, long, float, android.location.LocationListener, android.os.Looper)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestLocationUpdates(long, float, android.location.Criteria, android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestLocationUpdates(long, float, android.location.Criteria, android.location.LocationListener, android.os.Looper)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestSingleUpdate(android.location.Criteria, android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestSingleUpdate(android.location.Criteria, android.location.LocationListener, android.os.Looper)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestSingleUpdate(java.lang.String, android.app.PendingIntent)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.location.LocationManager" permissionRel="AnyOf" target="void requestSingleUpdate(java.lang.String, android.location.LocationListener, android.os.Looper)" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$Attendees" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$CalendarAlerts" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$CalendarEntity" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$Calendars" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$Colors" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$EventDays" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$Events" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$EventsEntity" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$ExtendedProperties" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$Instances" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$Reminders" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CalendarContract$SyncState" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALENDAR" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALENDAR" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CallLog" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALL_LOG" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALL_LOG" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CallLog$Calls" target="CONTENT_FILTER_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALL_LOG" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALL_LOG" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.provider.CallLog$Calls" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_CALL_LOG" operationKind="Read"/>
+        <permission name="android.permission.WRITE_CALL_LOG" operationKind="Write"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="android.telecom.PhoneAccountHandle getDefaultOutgoingPhoneAccount(java.lang.String)" targetKind="Method">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="boolean isInCall()" targetKind="Method">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="boolean isVoiceMailNumber(android.telecom.PhoneAccountHandle, java.lang.String)" targetKind="Method">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="java.lang.String getLine1Number(android.telecom.PhoneAccountHandle)" targetKind="Method">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="java.lang.String getVoiceMailNumber(android.telecom.PhoneAccountHandle)" targetKind="Method">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="java.util.List getCallCapablePhoneAccounts()" targetKind="Method">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="void placeCall(android.net.Uri, android.os.Bundle)" targetKind="Method">
+        <permission name="android.permission.CALL_PHONE"/>
+    </permissionDef>
+    <permissionDef className="android.telecom.TelecomManager" target="void showInCallScreen(boolean)" targetKind="Method">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <checkerDefs/>
+    <requesterDefs/>
+    <parametricSensDefs/>
+</PermissionDefinitions>

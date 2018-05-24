@@ -1,0 +1,8 @@
+<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)>
+<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>
+<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)>
+<com.android.providers.media.MediaProvider: android.net.Uri getAlbumArtOutputUri(com.android.providers.media.MediaProvider$DatabaseHelper,android.database.sqlite.SQLiteDatabase,long,android.net.Uri)>
+<com.android.providers.media.MediaProvider: android.os.ParcelFileDescriptor getThumb(com.android.providers.media.MediaProvider$DatabaseHelper,android.database.sqlite.SQLiteDatabase,java.lang.String,long,android.net.Uri)>
+<com.android.providers.media.MediaProvider: android.os.ParcelFileDescriptor makeThumbInternal(com.android.providers.media.MediaProvider$ThumbData)>
+<com.android.providers.media.MediaProvider: android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String)>
+<com.android.providers.media.MediaProvider: android.os.ParcelFileDescriptor openFileAndEnforcePathPermissionsHelper(android.net.Uri,java.lang.String)>

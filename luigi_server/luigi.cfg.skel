@@ -1,0 +1,12 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+## this is conf for luigid process
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[scheduler]
+
+[resources]
+big_ram-<hostname> = 4

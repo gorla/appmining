@@ -1,0 +1,41 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[worker]
+keep-alive = True
+
+[commons]
+is_remote=False
+SSH_HOST=
+SSH_PORT=
+remote_path=
+permission_mapping = ../flowdroid/permission_mapping.txt
+hostname=shuttle
+remote_root=<from local_cfg evo_data>
+
+
+[PermissionApk]
+# the binary file in the info_apk folder is for linux. to run aapt on mac
+# point to the local aapt file (default location is
+# /Users/paolo.calciati/Library/Android/sdk/build-tools/25.0.0/aapt)
+aapt_badging_cmd = ../info_apk/aapt_25.0.3 dump badging
+
+[FlowDroidJson]
+timeout_cmd = timeout 80m
+flowdroid_folder = /path/to/static_analysis/binaries/flowdroid
+flowdroid_java_cmd = java -Xmx150g -cp soot-infoflow-android-trunk.jar soot.jimple.infoflow.android.TestApps.Test
+flowdroid_options = --pathalgo contextsensitive --nostatic --aliasflowins --noarraysize --paths --aplength 1 --layoutmode none --incrementalresults --pathtimeout 800 --timeout 2800 --removerunnable --nocallbacksources --logsourcesandsinks
+android_platform = ../android
+src_and_sink_mapping = flowdroid/SourcesAndSinks_main.txt
+perm_mapping = ../flowdroid/permission_mapping.txt
+
+[MakeSourcesSinks]
+src_and_sink_mapping = flowdroid/SourcesAndSinks_main.txt
+perm_mapping = ../flowdroid/permission_mapping.txt
+
+[OverprivilegedApp]
+androguard_api_folder = /Users/paolo.calciati/Documents/static_analysis_app/apktool/androguard_api_perm_mappings

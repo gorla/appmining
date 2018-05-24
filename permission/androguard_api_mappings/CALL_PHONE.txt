@@ -1,0 +1,15 @@
+<android.telecom.TelecomManager: void placeCall(android.net.Uri,android.os.Bundle)>
+<com.android.internal.telephony.ITelephony$Stub$Proxy: boolean endCall()>
+<com.android.internal.telephony.ITelephony$Stub$Proxy: void call(java.lang.String)>
+<com.android.internal.telephony.ITelephony$Stub$Proxy: void call(java.lang.String,java.lang.String)>
+<com.android.internal.telephony.ITelephony$Stub: boolean endCall()>
+<com.android.internal.telephony.ITelephony$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>
+<com.android.internal.telephony.ITelephony$Stub: void call(java.lang.String)>
+<com.android.internal.telephony.ITelephony$Stub: void call(java.lang.String,java.lang.String)>
+<com.android.internal.telephony.ITelephony: boolean endCall()>
+<com.android.internal.telephony.ITelephony: void call(java.lang.String)>
+<com.android.internal.telephony.ITelephony: void call(java.lang.String,java.lang.String)>
+<com.android.phone.PhoneInterfaceManager: boolean endCall()>
+<com.android.phone.PhoneInterfaceManager: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>
+<com.android.phone.PhoneInterfaceManager: void call(java.lang.String)>
+<com.android.phone.PhoneInterfaceManager: void call(java.lang.String,java.lang.String)>

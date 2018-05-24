@@ -1,0 +1,5 @@
+<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>
+<android.content.ContentResolver: int bulkInsert(android.net.Uri,android.content.ContentValues[])>
+<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>
+<android.provider.CallLog$Calls: android.net.Uri addCall(com.android.internal.telephony.CallerInfo,android.content.Context,java.lang.String,int,int,long,int)>
+<android.provider.CallLog$Calls: void removeExpiredEntries(android.content.Context)>

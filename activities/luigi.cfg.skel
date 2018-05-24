@@ -1,0 +1,17 @@
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[worker]
+keep-alive = True
+
+[commons]
+is_remote=False
+SSH_HOST=
+SSH_PORT=
+remote_root=
+permission_mapping = ../flowdroid/permission_mapping.txt
+hostname=shuttle
+
+[ActivitiesExtractorRun]
+apk_extractor_path = java -jar ../binaries/api_extractor-1.01-SNAPSHOT.jar

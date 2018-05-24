@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PermissionDefinitions>
+    <permissionDef className="android.net.wifi.WifiManager" conditional="true" permissionRel="AllOf" target="SCAN_RESULTS_AVAILABLE_ACTION" targetKind="Field">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.util.List getNeighboringCellInfo()" targetKind="Method">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Carriers" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms" conditional="true" permissionRel="AllOf" target="CONTENT_CONVERSATIONS_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms" conditional="true" permissionRel="AllOf" target="CONTENT_DRAFT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms" conditional="true" permissionRel="AllOf" target="CONTENT_FILTER_BYPHONE_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms" conditional="true" permissionRel="AllOf" target="CONTENT_LOCKED_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms" conditional="true" permissionRel="AllOf" target="CONTENT_UNDELIVERED_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms" conditional="true" permissionRel="AllOf" target="SEARCH_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$MmsSms$PendingMessages" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms" conditional="true" permissionRel="AllOf" target="REPORT_REQUEST_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms" conditional="true" permissionRel="AllOf" target="REPORT_STATUS_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms$Rate" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms$Outbox" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms$Draft" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms$Sent" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Mms$Inbox" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Threads" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Threads" conditional="true" permissionRel="AllOf" target="OBSOLETE_THREADS_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Sms" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Sms$Conversations" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Sms$Outbox" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Sms$Draft" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Sms$Sent" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Sms$Inbox" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+        <permission name="android.permission.READ_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.Telephony$Sms$Intents" conditional="true" permissionRel="AllOf" target="SMS_RECEIVED_ACTION" targetKind="Field">
+        <permission name="android.permission.RECEIVE_SMS"/>
+    </permissionDef>
+    <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="android.net.Uri lookupContact(android.content.ContentResolver, android.net.Uri)" targetKind="Method">
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+    </permissionDef>
+    <permissionDef className="android.media.MediaRecorder" conditional="true" permissionRel="AllOf" target="void setAudioSource(int)" targetKind="Method">
+        <permission name="android.permission.RECORD_AUDIO"/>
+    </permissionDef>
+    <permissionDef className="android.media.AudioRecord" conditional="true" permissionRel="AllOf" target="void &lt;init&gt;(int, int, int, int, int)" targetKind="Method">
+        <permission name="android.permission.RECORD_AUDIO"/>
+    </permissionDef>
+    <permissionDef className="android.telephony.PhoneStateListener" conditional="true" permissionRel="AllOf" target="LISTEN_SIGNAL_STRENGTHS" targetKind="Field">
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </permissionDef>
+    <checkerDefs/>
+    <requesterDefs/>
+    <parametricSensDefs/>
+</PermissionDefinitions>
