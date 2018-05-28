@@ -1,0 +1,20 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[commons]
+is_remote=False
+SSH_HOST=
+SSH_PORT=
+remote_root=
+permission_mapping = ../flowdroid/permission_mapping.txt
+hostname=shuttle
+
+[ExtractPermissionApi]
+perm_mapping = <pathToRepo>/static_analysis_app/flowdroid/permission_mapping.txt
+
+[ExtractApi]
+android_api_list_file = <pathToRepo>/static_analysis_app/apktool/susi_apis.txt

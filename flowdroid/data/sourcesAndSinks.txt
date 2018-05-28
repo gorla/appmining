@@ -1,0 +1,595 @@
+	// public void addOnAccountsUpdatedListener(final OnAccountsUpdateListener listener, Handler handler, boolean updateImmediately)
+	// public String blockingGetAuthToken(Account account, String authTokenType, boolean notifyAuthFailure)
+	// public Account[] getAccounts()
+	// public Account[] getAccountsByType(String type)
+	// public Account[] getAccountsByTypeForPackage(String type, String packageName)
+	// public AccountManagerFuture<Account[]> getAccountsByTypeAndFeatures(final String type, final String[] features, AccountManagerCallback<Account[]> callback, Handler handler)
+	// public AuthenticatorDescription[] getAuthenticatorTypes()
+	// public AccountManagerFuture<Bundle> getAuthToken(final Account account, final String authTokenType, final Bundle options, final Activity activity, AccountManagerCallback<Bundle> callback, Handler handler)
+	// public AccountManagerFuture<Bundle> getAuthToken(final Account account, final String authTokenType, final boolean notifyAuthFailure, AccountManagerCallback<Bundle> callback, Handler handler)
+	// public AccountManagerFuture<Bundle> getAuthToken(final Account account, final String authTokenType, final Bundle options, final boolean notifyAuthFailure, AccountManagerCallback<Bundle> callback, Handler handler)
+	// public AccountManagerFuture<Bundle> getAuthTokenByFeatures(final String accountType, final String authTokenType, final String[] features, final Activity activity, final Bundle addAccountOptions, final Bundle getAuthTokenOptions, final AccountManagerCallback<Bundle> callback, final Handler handler)
+	// public AccountManagerFuture<Boolean> hasFeatures(final Account account, final String[] features, AccountManagerCallback<Boolean> callback, Handler handler)
+	// public void removeOnAccountsUpdatedListener(OnAccountsUpdateListener listener)
+	// frameworks/base/core/java/android/accounts/AccountManager.java
+
+	// public android.accounts.Account[] getAccounts(java.lang.String accountType) throws android.os.RemoteException;
+	// public android.accounts.Account[] getAccountsAsUser(java.lang.String accountType, int userId) throws android.os.RemoteException;
+	// public void getAccountsByFeatures(android.accounts.IAccountManagerResponse response, java.lang.String accountType, java.lang.String[] features) throws android.os.RemoteException;
+	// public android.accounts.Account[] getAccountsForPackage(java.lang.String packageName, int uid)
+	// public android.accounts.Account[] getSharedAccountsAsUser(int userId) throws android.os.RemoteException;
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.2_r1/com/android/server/accounts/AccountManagerService.java
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/accounts/IAccountManager.java
+
+	// public Object getSystemService(String name)
+	// public void startActivities(Intent[] intents)
+	// public void startActivities(Intent[] intents, Bundle options)
+	// public void startActivity(Intent intent)
+	// public void startActivity(Intent intent, Bundle options)
+	// public void startActivityForResult(Intent intent, int requestCode)
+	// public void startActivityForResult(Intent intent, int requestCode, Bundle options)
+	// public void startActivityFromChild(Activity child, Intent intent, int requestCode)
+	// public void startActivityFromChild(Activity child, Intent intent, int requestCode, Bundle options)
+	// public void startActivityFromFragment(Fragment fragment, Intent intent, int requestCode)
+	// public void startActivityFromFragment(Fragment fragment, Intent intent, int requestCode, Bundle options)
+	// public boolean startActivityIfNeeded(Intent intent, int requestCode)
+	// public boolean startActivityIfNeeded(Intent intent, int requestCode, Bundle options)
+	// public boolean startNextMatchingActivity(Intent intent)
+	// public boolean startNextMatchingActivity(Intent intent, Bundle options)
+	// frameworks/base/core/java/android/app/Activity.java
+
+	// public List<RecentTaskInfo> getRecentTasks(int maxNum, int flags)
+	// public List<RunningAppProcessInfo> getRunningAppProcesses()
+	// public List<RunningServiceInfo> getRunningServices(int maxNum)
+	// public List<RunningTaskInfo> getRunningTasks(int maxNum)
+	// frameworks/base/core/java/android/app/ActivityManager.java
+
+	// public List<ActivityManager.RecentTaskInfo> getRecentTasks(int maxNum, int flags, int userId)
+	// public List<ActivityManager.RunningAppProcessInfo> getRunningAppProcesses()
+	// public List<ActivityManager.RunningServiceInfo> getServices(int maxNum, int flags)
+	// public List<RunningTaskInfo> getTasks(int maxNum, int flags, IThumbnailReceiver receiver)
+
+	// public int startActivities(IApplicationThread caller, String callingPackage, Intent[] intents, String[] resolvedTypes, IBinder resultTo, Bundle options, int userId)
+	// public int startActivity(IApplicationThread caller, String callingPackage, Intent intent, String resolvedType, IBinder resultTo, String resultWho, int requestCode, int flags, String profileFile, ParcelFileDescriptor profileFd, Bundle options)
+	// public int startActivityAsUser(IApplicationThread caller, String callingPackage, Intent intent, String resolvedType, IBinder resultTo, String resultWho, int requestCode, int flags, String profileFile,ParcelFileDescriptor profileFd, Bundle options, int userId)
+	// public WaitResult startActivityAndWait(IApplicationThread caller, String callingPackage, Intent intent, String resolvedType, IBinder resultTo, String resultWho, int requestCode, int flags, String profileFile, ParcelFileDescriptor profileFd, Bundle options, int userId)
+	// public int startActivityWithConfig(IApplicationThread caller, String callingPackage, Intent intent, String resolvedType, IBinder resultTo, String resultWho, int requestCode, int startFlags, Configuration newConfig, Bundle options, int userId)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.2_r1/com/android/server/am/ActivityManagerService.java
+	// public int startActivityAsCaller(IApplicationThread caller, String callingPackage, Intent intent, String resolvedType, IBinder resultTo, String resultWho, int requestCode, int flags, ProfilerInfo profilerInfo, Bundle options, int userId)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/accounts/IAccountManager.java/
+
+	// 4.2+ public long inputDispatchingTimedOut(int pid, final boolean aboveSystem, String reason)
+	// 4.3+ public boolean inputDispatchingTimedOut(final ProcessRecord proc, final ActivityRecord activity, final ActivityRecord parent, final boolean aboveSystem, String reason)
+	// 4.0.3+ final void appNotResponding(ProcessRecord app, ActivityRecord activity, ActivityRecord parent, boolean aboveSystem, final String annotation)
+	// 4.0.3+ public void systemReady(final Runnable goingCallback)
+	// 4.0.3+ final void finishBooting()
+	// 4.1+ public void setLockScreenShown(boolean shown)
+	// 4.0.3-5.0.x public void goingToSleep()
+	// 4.0.3-5.0.x public void wakingUp()
+	// 4.0.3+ public boolean shutdown(int timeout)
+	// 4.2+ public final void activityResumed(IBinder token)
+	// public final void activityPaused(IBinder token)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.2_r1/com/android/server/am/ActivityManagerService.java/
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.2_r1/com/android/server/am/ActivityRecord.java/
+
+	// Location getLastLocation(GoogleApiClient client)
+	// abstract PendingResult<Status> removeActivityUpdates(GoogleApiClient client, PendingIntent callbackIntent)
+	// abstract PendingResult<Status> requestActivityUpdates(GoogleApiClient client, long detectionIntervalMillis, PendingIntent callbackIntent)
+	// https://developer.android.com/reference/com/google/android/gms/location/ActivityRecognitionApi.html
+
+	// public void removeActivityUpdates(PendingIntent callbackIntent)
+	// public void requestActivityUpdates(long detectionIntervalMillis, PendingIntent callbackIntent)
+	// http://developer.android.com/reference/com/google/android/gms/location/ActivityRecognitionClient.html
+
+	// private void handleReceiver(ReceiverData data)
+	// frameworks/base/core/java/android/app/ActivityThread.java
+
+	// final Message next()
+	// frameworks/base/core/java/android/android/os/MessageQueue.java
+
+	// String getId()
+	// http://developer.android.com/reference/com/google/android/gms/ads/identifier/AdvertisingIdClient.Info.html
+
+	// abstract PendingResult<Status> view(GoogleApiClient apiClient, Activity activity, Intent viewIntent, String title, Uri webUrl, List<AppIndexApi.AppIndexingLink> outLinks)
+	// abstract PendingResult<Status> view(GoogleApiClient apiClient, Activity activity, Uri appIndexingUrl, String title, Uri webUrl, List<AppIndexApi.AppIndexingLink> outLinks)
+	// abstract PendingResult<Status> viewEnd(GoogleApiClient apiClient, Activity activity, Uri appIndexingUrl)
+	// abstract PendingResult<Status> viewEnd(GoogleApiClient apiClient, Activity activity, Intent viewIntent)
+	// https://developer.android.com/reference/com/google/android/gms/appindexing/AppIndexApi.html
+
+	// public List<AppWidgetProviderInfo> getInstalledProviders()
+	// public List<AppWidgetProviderInfo> getInstalledProvidersForProfile(UserHandle profile)
+	// frameworks/base/core/java/android/appwidget/AppWidgetManager.java
+
+	// public List<AppWidgetProviderInfo> getInstalledProviders(int categoryFilter, int userId)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.4_r1/com/android/server/AppWidgetService.java
+
+	// public void startRecording()
+	// public void startRecording(MediaSyncEvent syncEvent)
+	// public void stop()
+	// frameworks/base/media/java/android/media/AudioRecord.java
+
+	// public String getAddress()
+	// public Set<BluetoothDevice> getBondedDevices()
+	// public String getName()
+	// frameworks/base/core/java/android/bluetooth/BluetoothAdapter.java
+	// http://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.4_r1/com/android/server/BluetoothManagerService.java
+
+	// public String getAddress()
+	// frameworks/base/core/java/android/bluetooth/BluetoothDevice.java
+
+	// public void setPreviewCallback(Camera.PreviewCallback cb)
+	// public void setPreviewCallbackWithBuffer(Camera.PreviewCallback cb)
+	// public void setPreviewDisplay(SurfaceHolder holder)
+	// public void setPreviewTexture(SurfaceTexture surfaceTexture)
+	// public final void setOneShotPreviewCallback (Camera.PreviewCallback cb)
+	// public native final void startPreview()
+	// public void stopPreview()
+	// public final void takePicture(ShutterCallback shutter, PictureCallback raw, PictureCallback jpeg)
+	// public final void takePicture(ShutterCallback shutter, PictureCallback raw, PictureCallback postview, PictureCallback jpeg)
+	// frameworks/base/core/java/android/hardware/Camera.java
+
+	// public int capture(CaptureRequest request, CaptureListener listener, Handler handler)
+	// public int captureBurst(List<CaptureRequest> requests, CaptureListener listener, Handler handler)
+	// public int setRepeatingRequest(CaptureRequest request, CaptureListener listener, Handler handler)
+	// public int setRepeatingBurst(List<CaptureRequest> requests, CaptureListener listener, Handler handler)
+	// frameworks/base/core/java/android/hardware/camera2/impl/CameraDevice.java
+
+	// public static getDeviceId()
+	// public Inet4Address getIpAddress()
+	// http://developer.android.com/reference/com/google/android/gms/cast/CastDevice.html
+
+	// public void addPrimaryClipChangedListener(OnPrimaryClipChangedListener what)
+	// public ClipData getPrimaryClip()
+	// public ClipDescription getPrimaryClipDescription()
+	// public CharSequence getText()
+	// public boolean hasPrimaryClip()
+	// public boolean hasText()
+	// public void removePrimaryClipChangedListener(ClipboardManager.OnPrimaryClipChangedListener what)
+	// frameworks/base/core/java/android/content/ClipboardManager.java
+
+	// abstract void onConnected(Bundle connectionHint)
+	// https://developer.android.com/reference/com/google/android/gms/common/api/GoogleApiClient.ConnectionCallbacks.html
+
+	// public NetworkInfo getActiveNetworkInfo()
+	// public NetworkInfo[] getAllNetworkInfo()
+	// public NetworkInfo getNetworkInfo(int networkType)
+	// frameworks/base/core/java/android/net/ConnectivityManager.java
+
+	// public static SyncInfo getCurrentSync()
+	// static List<SyncInfo> getCurrentSyncs()
+	// static SyncAdapterType[] getSyncAdapterTypes()
+
+	// final AssetFileDescriptor openAssetFileDescriptor(Uri uri, String mode)
+	// final AssetFileDescriptor openAssetFileDescriptor(Uri uri, String mode, CancellationSignal cancellationSignal)
+	// final ParcelFileDescriptor openFileDescriptor(Uri uri, String mode, CancellationSignal cancellationSignal)
+	// final ParcelFileDescriptor openFileDescriptor(Uri uri, String mode)
+	// final InputStream openInputStream(Uri uri)
+	// final OutputStream openOutputStream(Uri uri)
+	// final OutputStream openOutputStream(Uri uri, String mode)
+	// final AssetFileDescriptor openTypedAssetFileDescriptor(Uri uri, String mimeType, Bundle opts, CancellationSignal cancellationSignal)
+	// final AssetFileDescriptor openTypedAssetFileDescriptor(Uri uri, String mimeType, Bundle opts)
+
+	// AssetFileDescriptor openAssetFile(Uri url, String mode, CancellationSignal signal)
+	// AssetFileDescriptor openAssetFile(Uri url, String mode)
+	// ParcelFileDescriptor openFile(Uri url, String mode)
+	// ParcelFileDescriptor openFile(Uri url, String mode, CancellationSignal signal)
+
+	// public Cursor query(Uri url, String[] projection, String selection, String[] selectionArgs, String sortOrder)
+	// public Cursor query(Uri url, String[] projection, String selection, String[] selectionArgs, String sortOrder, CancellationSignal cancellationSignal)
+
+	// https://developers.google.com/gmail/android/
+	// http://developer.android.com/reference/android/content/ContentResolver.html
+	// http://developer.android.com/reference/android/content/ContentProviderClient.html
+
+	// http://developer.android.com/reference/android/provider/Contacts.People.html
+	// http://developer.android.com/reference/android/provider/ContactsContract.Contacts.html
+	// http://developer.android.com/reference/android/provider/ContactsContract.Data.html
+	// http://developer.android.com/reference/android/provider/ContactsContract.PhoneLookup.html
+	// http://developer.android.com/reference/android/provider/ContactsContract.Profile.html
+	// http://developer.android.com/reference/android/provider/ContactsContract.RawContacts.html
+
+	// frameworks/base/core/java/android/content/ContentResolver.java
+
+	// public List<SyncInfo> getCurrentSyncs()
+	// public void registerContentObserver(android.net.Uri uri, boolean notifyForDescendants, android.database.IContentObserver observer, int userHandle)
+	// public void unregisterContentObserver(android.database.IContentObserver observer)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.2.2_r1/android/content/ContentService.java
+	// public List<android.content.SyncInfo> getCurrentSyncsAsUser(int userId)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/content/IContentService.java
+
+	// public Bundle call(String method, String request, Bundle args)
+	// http://developer.android.com/reference/android/provider/Settings.html
+	// http://developer.android.com/reference/android/provider/Settings.Global.html
+	// http://developer.android.com/reference/android/provider/Settings.Secure.html
+	// http://developer.android.com/reference/android/provider/Settings.System.html
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.2_r1/com/android/providers/settings/SettingsProvider.java
+
+	// public PackageManager getPackageManager()
+	// public Object getSystemService(String name)
+	// frameworks/base/core/java/android/app/ContextImpl.java
+
+	// public static String getExternalStorageState()
+	// frameworks/base/core/java/android/os/Environment.java
+
+	// Location getLastLocation(GoogleApiClient client)
+	// abstract PendingResult<Status> removeLocationUpdates(GoogleApiClient client, LocationListener listener)
+	// abstract PendingResult<Status> removeLocationUpdates(GoogleApiClient client, PendingIntent callbackIntent)
+	// abstract PendingResult<Status> requestLocationUpdates(GoogleApiClient client, LocationRequest request, LocationListener listener, Looper looper)
+	// abstract PendingResult<Status> requestLocationUpdates(GoogleApiClient client, LocationRequest request, LocationListener listener)
+	// abstract PendingResult<Status> requestLocationUpdates(GoogleApiClient client, LocationRequest request, PendingIntent callbackIntent)
+	// https://developer.android.com/reference/com/google/android/gms/location/FusedLocationProviderApi.html
+
+	// GoogleApiClient.Builder addConnectionCallbacks(GoogleApiClient.ConnectionCallbacks listener)
+	// https://developer.android.com/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html
+
+	// https://developer.android.com/reference/com/google/android/gms/common/api/PendingResult.html
+	// https://developer.android.com/reference/com/google/android/gms/common/api/Status.html
+	// https://developer.android.com/reference/com/google/android/gms/common/api/ResultCallback.html
+
+	// static String getToken(Context context, String accountName, String scope)
+	// static String getToken(Context context, String accountName, String scope, Bundle extras)
+	// static String getTokenWithNotification(Context context, String accountName, String scope, Bundle extras)
+	// static String getTokenWithNotification(Context context, String accountName, String scope, Bundle extras, Intent callback)
+	// static String getTokenWithNotification(Context context, String accountName, String scope, Bundle extras, String authority, Bundle syncBundle)
+	// https://developer.android.com/reference/com/google/android/gms/auth/GoogleAuthUtil.html
+
+	// boolean enableMyLocation()
+	// void disableMyLocation()
+	// https://developers.google.com/maps/documentation/android/v1/reference/index
+
+	// final Location getMyLocation()
+	// final void setLocationSource(LocationSource source)
+	// final void setOnMapClickListener(GoogleMap.OnMapClickListener listener)
+	// final void setOnMapLongClickListener(GoogleMap.OnMapLongClickListener listener)
+	// final void setOnMyLocationChangeListener(GoogleMap.OnMyLocationChangeListener listener)
+	// http://developer.android.com/reference/com/google/android/gms/maps/GoogleMap.html
+
+	// public LatLng getPosition ()
+	// http://developer.android.com/reference/com/google/android/gms/maps/model/Marker.html
+	// http://developer.android.com/reference/com/google/android/gms/maps/model/LatLng.html
+
+	// public static InetAddress[] getAllByName(String host)
+	// public static InetAddress[] getAllByNameOnNet(String host, int netId)
+	// public static InetAddress getByAddress(byte[] ipAddress)
+	// public static InetAddress getByAddress(String hostName, byte[] ipAddress)
+	// public static InetAddress getByName(String host)
+	// public static InetAddress getByNameOnNet(String host, int netId)
+	// libcore/luni/src/main/java/java/net/InetAddress.java
+	// http://developer.android.com/reference/java/net/InetAddress.html
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/net/Network.java
+
+	// public String getDescriptor()
+	// public String getName()
+	// frameworks/base/core/java/android/view/InputDevice.java
+
+	// public boolean checkIntent(FirewallIntentResolver resolver, ComponentName resolvedComponent, int intentType, Intent intent, int callerUid, int callerPid, String resolvedType, int receivingUid)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.2_r1/com/android/server/firewall/IntentFirewall.java
+
+	// public static void connect(FileDescriptor fd, InetAddress inetAddress, int port) throws SocketException
+	// public static void connect(FileDescriptor fd, InetAddress inetAddress, int port, int timeoutMs) throws SocketException, SocketTimeoutException
+	// public static FileDescriptor open(String path, int flags) throws FileNotFoundException
+	// public static FileDescriptor socket(boolean stream) throws SocketException
+	// https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/os/Environment.java
+	// https://android.googlesource.com/platform/libcore/+/android-5.0.1_r1/luni/src/main/java/libcore/io/IoBridge.java
+
+	// public InetAddress getAddress()
+	// public byte[] getRawAddress()
+	// https://developer.android.com/reference/android/net/IpPrefix.html
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/net/IpPrefix.java
+
+	// public List<InetAddress> getAddresses()
+	// public List<InetAddress> getAllAddresses()
+	// public List<LinkAddress> getAllLinkAddresses()
+	// public List<LinkAddress> getLinkAddresses()
+	// public @NonNull List<LinkProperties> getStackedLinks()
+	// http://developer.android.com/reference/android/net/LinkProperties.html
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/net/LinkProperties.java
+
+	// void addGeofences(List<Geofence> geofences, PendingIntent pendingIntent, LocationClient.OnAddGeofencesResultListener listener)
+	// Location getLastLocation()
+	// void removeGeofences(List<String> geofenceRequestIds, LocationClient.OnRemoveGeofencesResultListener listener)
+	// void removeGeofences(PendingIntent pendingIntent, LocationClient.OnRemoveGeofencesResultListener listener)
+	// void removeLocationUpdates(LocationListener listener)
+	// void removeLocationUpdates(PendingIntent callbackIntent)
+	// void requestLocationUpdates(LocationRequest request, PendingIntent callbackIntent)
+	// void requestLocationUpdates(LocationRequest request, LocationListener listener)
+	// void requestLocationUpdates(LocationRequest request, LocationListener listener, Looper looper)
+	// https://developer.android.com/reference/com/google/android/gms/location/LocationClient.html
+
+	// public void addGeofence(LocationRequest request, Geofence fence, PendingIntent intent)
+	// public boolean addGpsStatusListener(GpsStatus.Listener listener)
+	// public boolean addNmeaListener(GpsStatus.NmeaListener listener)
+	// public void addProximityAlert(double latitude, double longitude, float radius, long expiration, PendingIntent intent)
+	// public List<String> getAllProviders()
+	// public String getBestProvider(Criteria criteria, boolean enabledOnly)
+	// public GpsStatus getGpsStatus(GpsStatus status)
+	// public Location getLastKnownLocation(String provider)
+	// public List<String> getProviders(boolean enabledOnly)
+	// public List<String> getProviders(Criteria criteria, boolean enabledOnly)
+	// public boolean isProviderEnabled(String provider)
+	// public void removeUpdates(LocationListener listener)
+	// public void removeUpdates(PendingIntent intent)
+	// public void requestLocationUpdates(String provider, long minTime, float minDistance, LocationListener listener)
+	// public void requestLocationUpdates(String provider, long minTime, float minDistance, LocationListener listener, Looper looper)
+	// public void requestLocationUpdates(long minTime, float minDistance, Criteria criteria, LocationListener listener, Looper looper)
+	// public void requestLocationUpdates(String provider, long minTime, float minDistance, PendingIntent intent)
+	// public void requestLocationUpdates(long minTime, float minDistance, Criteria criteria, PendingIntent intent)
+	// public void requestSingleUpdate(String provider, LocationListener listener, Looper looper)
+	// public void requestSingleUpdate(Criteria criteria, LocationListener listener, Looper looper)
+	// public void requestSingleUpdate(String provider, PendingIntent intent)
+	// public void requestSingleUpdate(Criteria criteria, PendingIntent intent)
+	// public boolean sendExtraCommand(String provider, String command, Bundle extras)
+	// frameworks/base/location/java/android/location/LocationManager.java
+
+	// public void requestLocationUpdates(LocationRequest request, ILocationListener listener, android.app.PendingIntent intent, java.lang.String packageName)
+	// public void removeUpdates(ILocationListener listener, android.app.PendingIntent intent, java.lang.String packageName)
+	// public void requestGeofence(LocationRequest request, Geofence geofence, android.app.PendingIntent intent, java.lang.String packageName)
+	// public void removeGeofence(Geofence fence, android.app.PendingIntent intent, java.lang.String packageName)
+	// public Location getLastLocation(LocationRequest request, java.lang.String packageName)
+	// public boolean addGpsStatusListener(IGpsStatusListener listener, java.lang.String packageName)
+	// public void removeGpsStatusListener(IGpsStatusListener listener)
+	// public java.util.List<java.lang.String> getAllProviders()
+	// public java.util.List<java.lang.String> getProviders(Criteria criteria, boolean enabledOnly)
+	// public java.lang.String getBestProvider(Criteria criteria, boolean enabledOnly)
+	// public boolean isProviderEnabled(java.lang.String provider)
+	// public boolean sendExtraCommand(java.lang.String provider, java.lang.String command, android.os.Bundle extras)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.4_r1/com/android/server/LocationManagerService.java
+	// public boolean addGpsMeasurementsListener(IGpsMeasurementsListener listener, String packageName)
+	// public boolean addGpsNavigationMessageListener(IGpsNavigationMessageListener listener, String packageName)
+	// public boolean removeGpsMeasurementsListener(IGpsMeasurementsListener listener)
+	// public boolean removeGpsNavigationMessageListener(IGpsNavigationMessageListener listener)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/com/android/server/LocationManagerService.java
+
+	// void setOutputFile(FileDescriptor fd)
+	// void setOutputFile(String path)
+	// public prepare()
+	// public native void start()
+	// void stop()
+	// frameworks/base/media/java/android/media/MediaRecorder.java
+
+	// public DetailedState getDetailedState()
+	// public State getState()
+	// public boolean isConnected()
+	// public boolean isConnectedOrConnecting()
+	// frameworks/base/core/java/android/net/NetworkInfo.java
+
+	// Internet:
+	// - public static NetworkInterface getByIndex(int index)
+	// - public static NetworkInterface getByInetAddress(InetAddress address)
+	// - public static NetworkInterface getByName(String interfaceName)
+	// - public static Enumeration<NetworkInterface> getNetworkInterfaces()
+
+	// Network:
+	// - public byte[] getHardwareAddress()
+	// - public Enumeration<InetAddress> getInetAddresses()
+	// - public List<InterfaceAddress> getInterfaceAddresses()
+
+	// libcore/luni/src/main/java/java/net/NetworkInterface.java
+	// http://developer.android.com/reference/java/net/NetworkInterface.html
+
+	// public static NfcAdapter getDefaultAdapter() [deprecated]
+	// public static NfcAdapter getDefaultAdapter(Context context)
+	// public static synchronized NfcAdapter getNfcAdapter(Context context)
+	// frameworks/base/core/java/android/nfc/NfcAdapter.java
+
+	// NfcManager.getDefaultAdapter calls NfcAdapter.getNfcAdapter
+	// http://developer.android.com/reference/android/nfc/NfcManager.html
+
+	// public List<PackageInfo> getInstalledPackages(int flags)
+	// public String[] getPackagesForUid(int uid)
+	// public List<PackageInfo> getPackagesHoldingPermissions(String[] permissions, int flags)
+	// public List<PackageInfo> getPreferredPackages(int flags)
+	// public List<ResolveInfo> queryBroadcastReceivers(Intent intent, int flags)
+	// public List<ProviderInfo> queryContentProviders(String processName, int uid, int flags)
+	// public List<ResolveInfo> queryIntentActivities(Intent intent, int flags)
+	// public List<ResolveInfo> queryIntentActivityOptions(ComponentName caller, Intent[] specifics, Intent intent, int flags)
+	// public List<ResolveInfo> queryIntentContentProviders(Intent intent, int flags)
+	// public List<ResolveInfo> queryIntentServices(Intent intent, int flags)
+	// frameworks/base/core/java/android/app/ApplicationPackageManager.java
+
+	// public int checkPermission(String permName, String pkgName)
+	// public int checkUidPermission(String permName, int uid)
+
+	// public java.lang.String[] getPackagesForUid(int uid)
+	// public java.util.List<android.content.pm.ResolveInfo> queryIntentActivities(android.content.Intent intent, java.lang.String resolvedType, int flags, int userId)
+	// public java.util.List<android.content.pm.ResolveInfo> queryIntentActivityOptions(android.content.ComponentName caller, android.content.Intent[] specifics, java.lang.String[] specificTypes, android.content.Intent intent, java.lang.String resolvedType, int flags, int userId)
+	// public java.util.List<android.content.pm.ResolveInfo> queryIntentReceivers(android.content.Intent intent, java.lang.String resolvedType, int flags, int userId)
+	// public java.util.List<android.content.pm.ResolveInfo> queryIntentServices(android.content.Intent intent, java.lang.String resolvedType, int flags, int userId)
+	// public java.util.List<android.content.pm.ResolveInfo> queryIntentContentProviders(android.content.Intent intent, java.lang.String resolvedType, int flags, int userId)
+	// public java.util.List<android.content.pm.ApplicationInfo> getPersistentApplications(int flags)
+	// public java.util.List<android.content.pm.ProviderInfo> queryContentProviders(java.lang.String processName, int uid, int flags)
+	// public java.util.List<android.content.pm.PackageInfo> getPreferredPackages(int flags)
+	// public android.content.pm.ParceledListSlice getInstalledPackages(int flags, int userId)
+	// public android.content.pm.ParceledListSlice getPackagesHoldingPermissions(java.lang.String[] permissions, int flags, int userId)
+	// public android.content.pm.ParceledListSlice getInstalledApplications(int flags, int userId)
+
+	// public PackageInfo getPackageInfo(String packageName, int flags, int userId)
+	// public ApplicationInfo getApplicationInfo(String packageName, int flags, int userId)
+
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/com/android/server/pm/PackageManagerService.java
+
+	// abstract PendingResult<PlaceLikelihoodBuffer> getCurrentPlace(GoogleApiClient client, PlaceFilter filter)
+	// https://developer.android.com/reference/com/google/android/gms/location/places/PlaceDetectionApi.html
+
+	// private static ProcessStartResult startViaZygote(
+	//     final String processClass, final String niceName,
+	//     final int uid, final int gid, final int[] gids, ...
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/os/Process.java
+
+	// public Process start()
+	// libcore/luni/src/main/java/java/lang/ProcessBuilder.java
+
+	// public void updateConfiguration(Configuration config, ...)
+	// frameworks/base/core/java/android/content/res/Resources.java
+
+	// public Process exec(String[] progArray)
+	// public Process exec(String[] progArray, String[] envp)
+	// public Process exec(String[] progArray, String[] envp, File directory)
+	// public Process exec(String prog)
+	// public Process exec(String prog, String[] envp)
+	// public Process exec(String prog, String[] envp, File directory)
+	// public void load(String pathName)
+	// public void loadLibrary(String libName)
+	// libcore/luni/src/main/java/java/lang/Runtime.java
+
+	// public Sensor getDefaultSensor(int type)
+	// public List<Sensor> getSensorList(int type)
+	// boolean registerListener(SensorEventListener listener, Sensor sensor, int rateUs, int maxBatchReportLatencyUs)
+	// boolean registerListener(SensorEventListener listener, Sensor sensor, int rateUs, Handler handler)
+	// boolean registerListener(SensorEventListener listener, Sensor sensor, int rateUs, int maxBatchReportLatencyUs, Handler handler)
+	// boolean registerListener(SensorEventListener listener, Sensor sensor, int rateUs)
+	// frameworks/base/core/java/android/hardware/SensorManager.java
+
+	// public synchronized static String getString(ContentResolver resolver, String name)
+	// frameworks/base/core/java/android/provider/Settings.java
+
+	// static boolean isApiSupported(Context context)
+	// static boolean isSipWifiOnly(Context context)
+	// static boolean isVoipSupported(Context context)
+	// public static SipManager newInstance (Context context)
+	// http://developer.android.com/reference/android/net/sip/SipManager.html
+
+	// public static ArrayList<SmsMessage> getAllMessagesFromIcc()
+	// public Bundle getCarrierConfigValues()
+	// public void sendDataMessage(String destinationAddress, String scAddress, short destinationPort, byte[] data, PendingIntent sentIntent, PendingIntent deliveryIntent)
+	// public void sendMultipartTextMessage(String destinationAddress, String scAddress, ArrayList<String> parts, ArrayList<PendingIntent> sentIntents, ArrayList<PendingIntent> deliveryIntents)
+	// public void sendMultimediaMessage(Context context, Uri contentUri, String locationUrl, Bundle configOverrides, PendingIntent sentIntent)
+	// public void sendTextMessage(String destinationAddress, String scAddress, String text, PendingIntent sentIntent, PendingIntent deliveryIntent)
+	// frameworks/base/telephony/java/android/telephony/SmsManager.java
+
+	// public List<SmsRawData> getAllMessagesFromIccEf(String callingPackage)
+	// public void sendData(java.lang.String callingPkg, java.lang.String destAddr, java.lang.String scAddr, int destPort, byte[] data, android.app.PendingIntent sentIntent, android.app.PendingIntent deliveryIntent)
+	// public void sendMultipartText(java.lang.String callingPkg, java.lang.String destinationAddress, java.lang.String scAddress, java.util.List<java.lang.String> parts, java.util.List<android.app.PendingIntent> sentIntents, java.util.List<android.app.PendingIntent> deliveryIntents)
+	// public void sendText(java.lang.String callingPkg, java.lang.String destAddr, java.lang.String scAddr, java.lang.String text, android.app.PendingIntent sentIntent, android.app.PendingIntent deliveryIntent)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.2_r1/com/android/internal/telephony/IccSmsInterfaceManager.java/
+
+	// public static String get(String key)
+	// public static String get(String key, String def)
+	// public static boolean getBoolean(String key, boolean def)
+	// public static int getInt(String key, int def)
+	// public static long getLong(String key, long def)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/android/os/SystemProperties.java/
+
+	// public void disableLocationUpdates()
+	// public void enableLocationUpdates()
+	// public List<CellInfo> getAllCellInfo()
+	// public CellLocation getCellLocation()
+	// public String getDeviceId()
+	// public String getGroupIdLevel1()
+	// public String getIsimDomain()
+	// public String getIsimImpi()
+	// public String[] getIsimImpu()
+	// public String getLine1AlphaTag()
+	// public String getLine1Number()
+	// public String getMsisdn()
+	// public List<NeighboringCellInfo> getNeighboringCellInfo()
+	// public String getNetworkCountryIso()
+	// public String getNetworkOperator()
+	// public String getNetworkOperatorName()
+	// public String getSimCountryIso()
+	// public String getSimOperator()
+	// public String getSimOperatorName()
+	// public static int getPhoneType(int networkMode)
+	// public String getSimSerialNumber()
+	// public String getSubscriberId()
+	// public String getVoiceMailAlphaTag()
+	// public String getVoiceMailNumber()
+	// public void listen(PhoneStateListener listener, int events)
+	// frameworks/base/telephony/java/android/telephony/TelephonyManager.java
+
+	// public String getDeviceId()
+	// public String getSubscriberId()
+	// public String getGroupIdLevel1()
+	// public String getIccSerialNumber()
+	// public String getImei()
+	// public String getLine1Number()
+	// public String getLine1AlphaTag()
+	// public String getMsisdn()
+	// public String getVoiceMailNumber()
+	// public String getVoiceMailAlphaTag()
+	// public String getCompleteVoiceMailNumber()
+	// public String getIsimImpi()
+	// public String getIsimDomain()
+	// public String[] getIsimImpu()
+	// public String getIsimIst()
+	// public String[] getIsimPcscf()
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/com/android/internal/telephony/PhoneSubInfo.java
+
+	// public void listen(java.lang.String pkg, IPhoneStateListener callback, int events, boolean notifyNow)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/com/android/server/TelephonyRegistry.java
+
+	// public void enableLocationUpdates()
+	// public void enableLocationUpdatesForSubscriber(long subId)
+	// public void disableLocationUpdates()
+	// public void disableLocationUpdatesForSubscriber(long subId)
+	// public List<android.telephony.CellInfo> getAllCellInfo()
+	// public android.os.Bundle getCellLocation()
+	// public String getCdmaMdn(long subId)
+	// public String getCdmaMin(long subId)
+	// public String getLine1AlphaTagForDisplay(long subId)
+	// public String getLine1NumberForDisplay(long subId)
+	// public List<android.telephony.NeighboringCellInfo> getNeighboringCellInfo()
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/com/android/internal/telephony/ITelephony.java
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android-apps/5.0.0_r1/com/android/phone/PhoneInterfaceManager.java
+
+	// public Map<String, UsageStats> queryAndAggregateUsageStats(long beginTime, long endTime)
+	// public List<ConfigurationStats> queryConfigurations(int intervalType, long beginTime, long endTime)
+	// public UsageEvents queryEvents(long beginTime, long endTime)
+	// public List<UsageStats> queryUsageStats(int intervalType, long beginTime, long endTime)
+	// https://developer.android.com/reference/android/app/usage/UsageStatsManager.html
+
+	// List<ConfigurationStats> queryConfigurationStats(int userId, int bucketType, long beginTime, long endTime)
+	// UsageEvents queryEvents(int userId, long beginTime, long endTime)
+	// List<UsageStats> queryUsageStats(int userId, int bucketType, long beginTime, long endTime)
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/com/android/server/usage/UsageStatsService.java
+
+	// public static int getDeviceId(String name)
+	// public int getDeviceId()
+	// public String getDeviceName()
+	// public static String getDeviceName(int id)
+	// public String getSerialNumber()
+	// http://developer.android.com/reference/android/hardware/usb/UsbDevice.html
+
+	// public static String getDefaultUserAgent(Context context) [17]
+	// public synchronized int getUserAgent()
+	// public synchronized String getUserAgentString()
+	// public synchronized void setUserAgent(int ua)
+	// public synchronized void setUserAgentString (String ua)
+	// http://developer.android.com/reference/android/webkit/WebSettings.html
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.2_r1/android/webkit/WebSettings.java
+
+	// public WebView(Context context)
+	// public WebView(Context context, AttributeSet attrs)
+	// public WebView(Context context, AttributeSet attrs, int defStyle)
+	// public WebView(Context context, AttributeSet attrs, int defStyle, boolean privateBrowsing)
+	// public WebView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes)
+	// protected WebView(Context context, AttributeSet attrs, int defStyle, Map<String, Object> javaScriptInterfaces, boolean privateBrowsing)
+	// public WebSettings getSettings()
+	// public void loadUrl(String url)
+	// public void loadUrl(String url, Map<String, String> additionalHttpHeaders)
+	// public postUrl(String url, byte[] postData)
+	// http://developer.android.com/reference/android/webkit/WebView.html
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.2_r1/android/webkit/WebView.java/
+
+	// public List<WifiConfiguration> getConfiguredNetworks()
+	// public WifiInfo getConnectionInfo()
+	// public DhcpInfo getDhcpInfo()
+	// public List<ScanResult> getScanResults()
+	// public WifiConfiguration getWifiApConfiguration()
+	// frameworks/base/wifi/java/android/net/wifi/WifiManager.java
+
+	// public java.util.List<android.net.wifi.BatchedScanResult> getBatchedScanResults(java.lang.String callingPackage)
+	// public java.util.List<android.net.wifi.WifiConfiguration> getConfiguredNetworks()
+	// public android.net.wifi.WifiInfo getConnectionInfo()
+	// public android.net.DhcpInfo getDhcpInfo()
+	// public java.util.List<android.net.wifi.ScanResult> getScanResults(java.lang.String callingPackage)
+	// public android.net.wifi.WifiConfiguration getWifiApConfiguration()
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/4.4.4_r1/com/android/server/wifi/WifiService.java
+	// http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/5.0.0_r1/com/android/server/wifi/WifiServiceImpl.java
+
+	// public void addView(View view, ViewGroup.LayoutParams params)
+	// public void removeView(View view)
+	// public void updateViewLayout(View view, ViewGroup.LayoutParams params)
+	// http://developer.android.com/reference/android/view/ViewManager.html
+	// http://developer.android.com/reference/android/view/WindowManager.html

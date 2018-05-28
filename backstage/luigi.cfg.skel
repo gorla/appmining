@@ -1,0 +1,29 @@
+## Configuration file for the static analysis component to analyze
+## Android apps
+
+[core]
+parallel-scheduling = True
+logging_conf_file = logging.cfg
+
+[commons]
+is_remote=False
+SSH_HOST=
+SSH_PORT=
+remote_root=
+permission_mapping = ../flowdroid/permission_mapping.txt
+hostname=shuttle
+
+[BackstageRun]
+timeout_cmd = timeout 60m
+backstage_folder = <pathToRepo>/binaries
+backstage_java_cmd = java -Xmx40g -Xss5m -cp Backstage-0.6.1-SNAPSHOT-jar-with-dependencies.jar st.cs.uni.saarland.de.testApps.TestApp
+backstage_ui_param = -noLang
+backstage_api_param =
+#-rAnalysis -numThreads 5 -cgAlgo RTA
+android_platform = <pathToRepo>/android/android-19/android.jar
+
+
+[InfoFlowAnalysis]
+#apk_list = backstage/include_pkg_list.txt
+#exclude_apk_list = backstage/exclude_pkg_list.txt
+

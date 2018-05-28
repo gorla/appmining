@@ -1,0 +1,15 @@
+# this file contains the local configuration of folders that are used
+# in cfg.py script. They must be set according to the local structure
+# of the project
+
+# evolution_data folder
+evo_data_folder = '<path_to_folder>'
+
+# apks folder
+apks_folder = '<path_to_folder>'
+
+# fake apks folder
+fake_apks_folder = '<path_to_folder>'
+
+# dynamic analysis result folder
+dynamic_analysis_result_folder = '<path_to_folder>'

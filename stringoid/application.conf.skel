@@ -1,0 +1,17 @@
+wala {
+  system-library-jars = [
+    "<Path to the rt.jar file>/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar",
+    "<Path to the android.jar file>/android/platforms/android-19/android.jar"
+  ]
+
+  system-libraries-as-dex = false
+}
+
+# IMPORTANT: those paths should not contain spaces. the usual path are
+# typically found at
+# /Library/Java/JavaVirtualMachines/jdk*.*.*_**.jdk/Contents/Home/jre/lib/rt.jar
+# on a Mac) and android.jar (typically found at /Applications/Android
+# Studio.app/Contents/plugins/android/lib/android.jar on a Mac
+
+
+

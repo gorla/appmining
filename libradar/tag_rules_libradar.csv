@@ -1,0 +1,521 @@
+afzkl/development/mColorPicker,Penroser
+android/content/pm,Android Package management
+android/opengl,OpenGL
+android/support/constraint,Android Support constraint
+android/support/design,Android Support Design
+android/support/multidex,Multidex
+android/support/v13,Android Support v13
+android/support/v4,Android Support v4
+android/support/v7,Android Support v7
+android/widget,android widget
+anet/channel,Umeng push
+anetwork/channel/aidl,AIDL
+anywheresoftware,anywheresoftware
+appinventor,Appinventor
+appmachine,AppMachine App Generator
+au/com/bytecode/opencsv,Opencsv
+aurelienribon,AurelienRibon Animation Library
+biz/neoline,Neoline
+bolts,Bolts Base Library
+butterknife,butterknife UI Framework
+ch/boye/httpclientandroidlib,httpclientandroidlib
+ch/qos/logback,Logback
+cn/domob,domob
+cn/jiguang,Jiguang
+cn/jpush/android,Jpush
+cn/sharesdk/evernote,Mob Share Evernote
+cn/sharesdk/framework,ShareSDK
+cn/sharesdk/onekeyshare,Mob one key share
+cn/sharesdk/socialization,mob social
+cn/sharesdk/tencent,Mob share to tencent
+cn/smssdk,Mob SMS SDK
+cn/uc/gamesdk,UC GAME
+com/ace/universalimageloader,Universal Image Loader
+com/actionbarsherlock,ActionBarSherlock
+com/activeandroid,ActiveAndroid
+com/adcolony,AdColony
+com/adfonic,Adfonic Mobile Ads
+com/adjust/sdk,Adjust SDK
+com/admob,Google Admob
+com/adobe/air,Adobe Air
+com/adobe/flashplayer,Adobe FlashPlayer
+com/adobe/flashruntime,Adobe FlashPlayer
+com/adobe/fre,Adobe Air FRE
+com/adobe/plugin,Adobe plugin
+com/adobe/xmp,Adobe XMP
+com/adsdk,AdSDK
+com/adsmogo,adsmogo
+com/adtech,Adtech
+com/adwhirl,Adwhirl Ads
+com/adwo/adsdk,adwo
+com/alibaba/fastjson,Fastjson
+com/alibaba/mtl,Alibaba MTL
+com/alimama/mobile,Alimama Dev
+com/alipay,Alipay
+com/aliyun,Aliyun
+com/amap,Alibaba Amap
+com/amazon/ags,Amazon Game Studios
+com/amazon/device/ads,Amazon Advertisement
+com/amazon/device/associates,Amazon Mobile Associates
+com/amazon/device/iap,Amazon In-App Purchasing
+com/amazon/identity/auth,Amazon Auth SDK
+com/amazon/inapp,Amazon In-App Purchasing
+com/amazon/insights,Amazon Analytics
+com/amazonaws,Amazon AWS
+com/android/dx,Dexmaker
+com/android/vending,Google Play
+com/android/volley,Volley HTTP library
+com/androidplot,Androidplot
+com/androidquery,AndroidQuery
+com/ansca/corona,Corona
+com/anzhi/market,Anzhi Market
+com/appbrain,Appbrain SDK
+com/appbyme,Appbyme
+com/apperhand,apperhand
+com/appflood,Appflood
+com/applovin,Applovin
+com/appmakr,Appmakr
+com/appodeal/ads,Appodeal Ads
+com/appquanta,Quanta Sky Ino.
+com/appquanta/,Qunta Sky Ino.
+com/appsflyer,AppsFlyer
+com/appyet,Appyet
+com/astuetz,Astuetz Pager Sliding Tab Strip
+com/auth0/android,Auth0 Android SDK
+com/auth0/jwt,Java implementation of JSON Web Token (JWT)
+com/autonavi/aps/amapapi,AMAP autonavi API
+com/aviary,Aviary photo editing SDK
+com/avos/avoscloud,
+com/avos/avoscloud/okhttp,Okhttp
+com/badlogic,badlogic
+com/baidu/android,Baidu APP SDK
+com/baidu/android/pushservice,baidu push service
+com/baidu/appx,Baidu APPX
+com/baidu/autoupdatesdk,baidu autoupdate sdk
+com/baidu/bdgame/sdk,baidu game
+com/baidu/cyberplayer,Baiduyun Android Player
+com/baidu/frontia,Baidu Frontia
+com/baidu/location,Baidu Location
+com/baidu/mapapi,Baidu Map
+com/baidu/mapapi/,Baidu Map
+com/baidu/mobads,Baidu Mobile Ads
+com/baidu/mobstat,Baidu Mobile Stat
+com/baidu/mtjstatsdk,baidu Stat Android SDK API.
+com/baidu/navi,Baidu Navigation
+com/baidu/navisdk,Baidu Navigation SDK
+com/baidu/paysdk,Baidu Wallet
+com/baidu/platform,Baidu APP SDK
+com/baidu/sapi2,Baidu SAPI2
+com/baidu/searchsdk,Baidu Search SDK
+com/baidu/tiebasdk,Baidu Tieba SDK
+com/baidu/wallet,Baidu Wallet(baifubao)
+com/batch,batch
+com/bda/controller,MOGAanywhere
+com/bea/xml/stream,StAX API
+com/biznessapps,biznessapps
+com/bugsense,BugSense
+com/bump,Bump pay
+com/bumptech/glide,Glide
+com/chartboost/sdk,ChartBoost
+com/chineseall/reader,chineseall reader
+com/commonsware/cwac/merge,CommonsWare MergeAdapter
+com/commonsware/cwac/sacklist,CommonsWare SackOfViewsAdapter
+com/comscore,comscore
+com/conduit/app,Conduit App
+com/coolcloud/uac/android,Coolyun UAC
+com/coremedia/iso,ISO Parser
+com/crashlytics/android,Crashlytics
+com/crowdcompass,crowdcompass
+com/daggertech,Dagger Tech
+com/daimajia/androidanimations,AndroidAnimations Library
+com/db4o,db4o
+com/deploygate,com/deploygate
+com/digits/sdk/vcard,Digits
+com/doapps,doapps
+com/dobao,com/dobao
+com/dropbox/client2,Dropbox Java SDK
+com/duoku/platform,duoku(Baidu Mobile Game Platform)
+com/easemob/,Huanxin
+com/esotericsoftware/kryo,Kryo
+com/esotericsoftware/minlog,Minlog
+com/esotericsoftware/spine,Spine
+com/esotericsoftware/tablelayout,TableLayout
+com/espian/showcaseview,Espian ShowcaseView
+com/everyplay,Everyplay
+com/facebook,Facebook
+com/fasterxml,Fasterxml
+com/flurry/android,Flurry
+com/flurry/org,Flurry
+com/flurry/sdk,Flurry SDK
+com/fyber,Fyber
+com/github,Github
+com/goodbarber,goodbarber
+com/google/ads,Google Ads
+com/google/analytics,Google Analytics
+com/google/android/apps/dashclock/api,DashClock API
+com/google/android/exoplayer,ExoPlayer
+com/google/android/gcm,Google GCM
+com/google/android/gms,Google Mobile Services
+com/google/android/net,Google Android Net
+com/google/android/vending,Google Play
+com/google/android/youtube/player,YouTube Android Player API
+com/google/api/client,Google API Client Libraries
+com/google/appinventor,Google Appinventor
+com/google/common,Google Core Libraries for Java 6+
+com/google/firebase,Firebase
+com/google/gdata,Google GData
+com/google/gson,Google Gson
+com/google/i18n,Google Internationalization
+com/google/inject,Guice
+com/google/maps/android,Google Maps Utils
+com/google/protobuf,Google Protocol Buffers
+com/google/tagmanager,Google Tag Manager
+com/google/thirdparty,Google Core Libraries (3rd Party)
+com/google/zxing,ZXing ('Zebra Crossing')
+com/googlecode/apdfviewer,Google Docs PDF Viewer
+com/handmark/pulltorefresh,pulltorefresh
+com/heyzap,Heyzap
+com/huawei/android,Huawei Android SDK
+com/huawei/ecs,Huawei ECS
+com/huntmads,HUNT Mobile Ads
+com/iapppay,Iapppay
+com/ibm/icu,International Components for Unicode
+com/iflytek,xunfei
+com/iflytek/speech,iflyteck speech
+com/iflytek/speech/aidl,iflytek speech
+com/iflytek/sunflower,Xunfei(iflytek) Voice
+com/iflytek/thirdparty,Iflytek Thirdparty
+com/igaworks,igaworks
+com/igexin,getui
+com/immersion/hapticmediasdk,Immersion TouchSense SDK
+com/inmobi,Inmobi
+com/inneractive,Inneractive
+com/ironsource,IronSource
+com/iwanvi,ZhongWenWanwei Reader
+com/j256/ormlite,J256 OrmLite
+com/jakewharton/disklrucache,Disk LRU Cache
+com/jakewharton/disklrucache/,Disk LRU Cache
+com/jasonkostempski,Jasonkostempski
+com/jayway/jsonpath,JsonPath
+com/jcodecraeer/xrecyclerview/progressindicator/indicator,XRecyclerView (pull to refresh)
+com/jcraft/jsch,Java Secure Channel
+com/jirbo/adcolony,Jirbo
+com/jumptap,jumptap
+com/kakao/talk,Kakao
+com/kbeanie/imagechooser,image chooser library
+com/koushikdutta/async,AndroidAsync
+com/kuguo/ad,kuguo Advertisement SDK
+com/leadbolt,Leadbolt
+com/lenovo/lps,Lenovo LPS
+com/letv/adlib,Letv Advertisement Library
+com/letv/datastatistics,Letv Data Statistics
+com/letv/lepaysdk,Letv pyment
+com/letv/sdk,Letv SDK
+com/letvcloud,Letv Cloud
+com/lidroid/xutils,xUtils
+com/loopj,Loopj
+com/madhouse/android/ads,Madhouse Inc Ads
+com/magtab,Magtab
+com/mashape/relocation,Mashape Relocation API
+com/maximono,Maximono
+com/melnykov/fab,FloatingActionButton
+com/milkmangames/extensions/android/coremobile,Milkman plugins
+com/millennialmedia,millennialmedia
+com/mindprod/ledatastream,LEDataStream
+com/mob/commons,mob share
+com/mob/tools,Mob Tools
+com/mobcent,MobCent
+com/mobclick/android,Umeng Click Analysis
+com/mobeta,Mobeta ListView
+com/mobfox,mobfox
+com/mobisage/android,Mobisage(adSage)
+com/mongodb,mongoDB
+com/mopub,MoPub
+com/myappengine,myappengine
+com/myshare/dynamic,Mob Share Dynamic
+com/naef/jnlua,jnlua
+com/nd/dianjin,Dianjin Advertisement
+com/neatplug/u3d/plugins,NeatPlug Unity3d Plugins
+com/nerd/TapdaqUnityPlugin,TapDaq Unity Plugin
+com/netease/nim,Netease IM SDK
+com/newrelic,newrelic
+com/ngpinc/,ngpinc:National Guard Products
+com/nhaarman/listviewanimations,ListViewAnimations
+com/nineoldandroids,Nine Old Androids
+com/nokia/payment/iap,Nokia In-App Payment
+com/nostra13,Nostra13 Image Loading
+com/nuance,Nuance Speech Kit Library
+com/nv/support/pulltorefresh,pulltorefresh
+com/onbarcode,onbarcode
+com/openfeint,OpenFeint
+com/outlinegames,Outline Games
+com/papaya,Papaya
+com/parse,Parse.com
+com/path/android/jobqueue,Android Priority Job Queue
+com/paypal,PayPal
+com/phonegap,PhoneGap
+com/playhaven,PlayHaven Mobile Ads
+com/pocketchange/,pocketchange
+com/polites,GestureImageView polites.com
+com/pollfish,Pollfish
+com/prime31,prime[31]
+com/purplebrain/adbuddiz,AdBuddiz
+com/qihoo/gamecenter/sdk,Qihoo 360 Gamecenter
+com/qihoo/psdk,Qihoo push
+com/qihoo/stat,Qihoo Stat
+com/qihoopp/framework,QihooPP Framework
+com/qihoopp/qcoinpay,Qihoo 360 Qcoinpay
+com/qmoney/ui,Qmoney
+com/qoppa,Qoppa Software
+com/qwapi,qwapi
+com/radiusnetworks,Radius Networks
+com/readystatesoftware/sqliteasset,Android SQLiteAssetHelper
+com/renn/rennsdk,renren sdk
+com/revmob,Revmob
+com/samsung/spen,Samsung Spen
+com/scoreloop,Scoreloop Game
+com/sec/android/iap,Samsung In-App Purchase
+com/sina/sso,Sina SSO
+com/sina/weibo,Weibo
+com/skplanet,skplanet
+com/slidingmenu,SlidingMenu
+com/smaato,Smaato
+com/spoledge,Spoledge AAC Decoder
+com/sponsorpay,Fyber(SponsorPay)
+com/squareup/okhttp,OkHttp
+com/squareup/otto,otto
+com/squareup/picasso,picasso
+com/squareup/pollexor,pollexor
+com/squareup/seismic,Seismic
+com/squareup/tape,Tape by Square
+com/squareup/timessquare,timessquare
+com/startapp,StartApp
+com/stericson/RootTools,Stericson RootTools
+com/subsplash,subsplash
+com/sun/activation,JavaBeans(TM) Activation Framework
+com/sun/mail,Sun Mail.jar
+com/supersonic/adapters/supersonicads,Supersonic Ads
+com/supersonic/mediationsdk,Supersonic MediationSDK(Abandoned)
+com/supersonicads/sdk,Supersonic: Mobile Advertising
+com/taobao/accs,Taobao ACCS
+com/tapdaq/sdk,TapDaq Android SDK
+com/tapdaq/tapdaqunityads,TapDaq Unity Plugin Ads
+com/tapit,Tapit
+com/tapjoy,Tapjoy
+com/tencent/android/tpush,Tencent Tpush (Xinge)
+com/tencent/bugly,Bugly
+com/tencent/common,Tencent Login
+com/tencent/connect,Tencent Login
+com/tencent/jsutil,Tencent Login
+com/tencent/lbs,Tencent Map LBS
+com/tencent/map,Tencent Map
+com/tencent/mm,Tencent Wechat
+com/tencent/mobwin,Tencent MobWin
+com/tencent/mta,Tencent MTA
+com/tencent/open,Tencent Login
+com/tencent/plus,Tencent Login
+com/tencent/qqconnect,Tencent Login
+com/tencent/qzone,Tencent Qzone
+com/tencent/record,Tencent Login
+com/tencent/sdkutil,Tencent SDK Utilities
+com/tencent/smtt,Tencent X5 (SMTT)
+com/tencent/stat,Tecent MTA
+com/tencent/t,Tencent Login
+com/tencent/tauth,Tencent Login
+com/tencent/utils,Tencent Login
+com/tencent/webnet,Tencent WebNet
+com/tencent/weibo,Tencent Weibo
+com/tencent/weiyun,Tencent Weiyun
+com/tencent/wpa,Tencent WPA
+com/tencent/wxop,tencent weixin Open(Share)
+com/tendcloud/tenddata,TendDaTa
+com/thirdparty,Thirdparty
+com/threatmetrix,ThreatMetrix
+com/turbomanage/httpclient,basic-http-client
+com/umeng/analytics,Umeng Analytics
+com/umeng/api,Umeng API
+com/umeng/common,Umeng Common
+com/umeng/fb,Umeng feedback
+com/umeng/message,Umeng Message Push
+com/umeng/newxp,Umeng newxp
+com/umeng/socialize,Umeng Socialize
+com/umeng/socom,Umeng social component
+com/umeng/update,Umeng Update
+com/umeng/xp,Umeng XP
+com/unionpay/mobile/android,Unionpay
+com/unionpay/tsmservice,Unionpay TSM(Trusted Service Management)
+com/unity3d,Unity3D
+com/unity3d/ads,Unity3d Ads
+com/urbanairship,urbanairship
+com/uservoice/uservoicesdk,UserVoice Android SDK
+com/ut/mini,ut mini push sdk
+com/uzmap/pkg/uzkit/fineHttp,fine HTTP
+com/vercoop,Vercoop
+com/verizon,Verizon
+com/viewpagerindicator,Android Viewpagerindicator Widget
+com/vividsolutions/jts,JTS Topology Suite
+com/vjianke/pulltorefresh,pulltorefresh
+com/vl/pulltorefresh,pulltorefresh
+com/vpon,Vpon
+com/vungle,Vungle
+com/wm/pulltorefresh,pulltorefresh
+com/xiaomi/mipush/sdk,miaomi mipush
+com/xiaomi/push,Xiaomi Push
+com/xiaomi/smack,Xiaomi Smack
+com/xiaomi/xmpush,Xiaomi XMpush
+com/yandex/mobile/ads,Yandex Ad
+com/yixia,Yixia
+cz/msebera/android/httpclient,HttpClient Android repackage buildscript
+dagger,Dagger
+de/greenrobot/dao,GreenDao
+de/greenrobot/event,EventBus
+de/keyboardsurfer,Keyboard Surfer
+flexjson,FlexJson Library
+fr/castorfle,castorfle Smooth Progress Bar
+gnu/commonlisp,GNU Common Lisp
+gnu/ecmascript,ECMAScript
+gnu/kawa,GNU KAWA
+gnu/mapping,GNU Mapping
+gnu/xml,GNU XML
+greendroid,GreenDroid
+hirondelle/date4j,DATE4J
+im/quar,AutoLayout for Android
+info/guardianproject/bouncycastle,GuardianProject Bouncy Castle
+io/dcloud,Dcloud
+io/fabric/sdk/android,Fabric
+it/gmariotti/cardslib,Card Library
+it/sauronsoftware/ftp4j,ftp4j
+javax/activation,JavaBeans Activation Framework (JAF)
+javax/annotation,JavaX Annotation API
+javax/jmdns,JavaX jmDNS library
+javax/mail,JavaMail API
+javax/servlet,JavaX Servlet API
+javax/ws/rs,JavaX WebServices RESTful Resources
+jcifs,JCIFS
+jsr166y,JSR-166y Java
+junit,Junit
+jxl,Java Excel API
+kankan/wheel,Kankan Wheel Android scroller
+kawa,Kawa for Android
+me/apla/cordova,Application preferences plugin for Cordova 3+
+me/kiip,KIIP Mobile Ads
+me/zhanghai/android/materialprogressbar,MaterialProgressBar
+microsoft/mappoint,Microsoft MapPoint
+mm/purchasesdk,China Mobile PurchaseSDK
+mobisocial/omlib,Omlet SDK
+mono/android,Mono for Android
+net/authorize,Authorize.NET
+net/hockeyapp/android,HockeyApp
+net/lingala/zip4j,Zip4j
+net/minidev/json,json smart
+net/simonvt/menudrawer,MenuDrawer
+net/sourceforge/pinyin4j,Pinyin4j
+net/sourceforge/zbar,SourceForge ZBar
+net/tsz/afinal,Afinal
+net/youmi,Youmi Ads
+nl/siegmann/epublib,EPublib
+oauth/signpost,Signpost Oauth
+okhttp3,OKHttp3.0
+okio,OkHttp okio Framework
+opentk,The Open Toolkit Library
+org/achartengine,AChartEngine
+org/acra,ACRA (Application Crash Reports for Android)
+org/anddev/andengine,Andengine Game Engine
+org/andengine,Andengine Game Engine
+org/android/agoo,Umeng U-push (Old version called agoo)
+org/androidannotations,AndroidAnnotations API
+org/apache/commons,Apache Common
+org/apache/cordova,Apache Cordova
+org/apache/harmony,Apache Harmony
+org/apache/http,Apache Http
+org/apache/james,Apache James Mail Enterprise Serve
+org/apache/log4j,Apache Log4j
+org/apache/tools/ant,Apache Ant Core
+org/apache/tools/mail,Apache ANT (Mail)
+org/apache/tools/tar,Apache ANT (Tar)
+org/apache/tools/zip,Apache ANT (Zip)
+org/appcelerator,Appcelerator
+org/aspectj,AspectJ
+org/bouncycastle,Bouncy Castle
+org/ccil/cowan/tagsoup,TagSoup
+org/cocos2d,cocos2D
+org/cocos2dx,cocos2DX
+org/codehaus/jackson,Jackson Json-processor
+org/dom4j,Dom4j
+org/ebookdroid/ui/library/tasks,EBookDroid
+org/fmod,Fmod
+org/geometerplus/fbreader,FBReader
+org/geometerplus/zlibrary,Zlibrary(FBReader PDF Reader)
+org/hamcrest,hamcrest
+org/htmlcleaner,htmlCleaner
+org/ice4j,A Java implementation of the ICE protocol
+org/ini4j,ini4j
+org/jaudiotagger,JAudiotagger
+org/java_websocket,Java-WebSocket
+org/jaxen,Jaxen
+org/jdeferred,Java jdeferred Library
+org/jdom,JDOM V1
+org/jdom2,JDOM2
+org/jivesoftware/smack,Smack
+org/jivesoftware/smackx,Smack Extensions
+org/joda/time,Joda Time
+org/json/simple,Json org
+org/jsoup,Jsoup
+org/junit,jUnit Java Unit Test
+org/kde/necessitas/ministro/,Ministro Qt shared libraries
+org/kobjects,KObjects
+org/ksoap2,ksoap2
+org/kxml2,Kxml2
+org/lobobrowser,Lobobrowser
+org/mapsforge,Mapsforge API
+org/metalev/multitouch,Metalev Multi Touch
+org/mozilla/intl/chardet,Mozilla Charset Detector
+org/mozilla/javascript,Mozilla Rhino
+org/mozilla/universalchardet,Mozilla Universal Detector
+org/msgpack,Messagepack
+org/nexage,Millennial Media
+org/nexage/sourcekit/mraid,Nexage SourceKit-MRAID(part of MillennialMedia)
+org/ocpsoft/prettytime,PrettyTime
+org/openudid,OpenUDID Salama Generator
+org/osmdroid,OpenStreetMap-Tools
+org/scribe,Scribe Java Lib
+org/simpleframework,simple framework
+org/slf4j,SLF4J
+org/spongycastle,Spongy Castle
+org/springframework,Spring Framework
+org/tukaani/xz,XZ For Java
+org/vudroid,Vudroid PDF Reader
+org/xbill/DNS,Dnsjava
+org/xinhua/analytics,Xinhua Analytics
+org/xmlpull,XML Pull
+org/xutils,xUtils
+org/yaml/snakeyaml,SnakeYAML
+org/zywx/wbpalmstar,Zywx Wbpalmstar APP Framework
+pagerslidingtabstrip,PagerSlidingTabStrip UI Framework
+pdftron,Pdftron PDF Widget
+pl/polidea,Polidea
+pts/PhoneGap,PhoneGap
+rajawali/wallpaper,rajawali WallPapper
+retrofit,retrofit RESTful Library
+roboguice,Roboguice
+rx/internal,RxJava Retrofit
+ti/imagefactory,Titanium Image Factory
+ti/map,Ti Map
+ti/modules/titanium,Titanium-Modules
+twitter4j,Twitter 4j
+u/aly,Umeng Analysis
+uk/co/senab/actionbarpulltorefresh,actionbarpulltorefresh
+v2/com/playhaven,PlayHaven Mobile Ads
+xamarin,Xamarin
+zfee/sdk,ZFEE SDK
+com/crittercism/app,Apteligent
+com/braintreepayments,Braintree
+com/squareup,Square POS
+com/jakewharton/rxbinding,RxBinding
+com/nimbusds,Nimbus JOSE+JWT
+com/apache/tika,Apache Tika
+com/mixpanel/android,Mixpanel
+org/apache/tika,Apache Tika
+com/stripe/android,Stripe Android
+com/payleven,Payleven
+com/dynatrace,Dynotrace Gradle

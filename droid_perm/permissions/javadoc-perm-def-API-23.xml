@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PermissionDefinitions>
+  <permissionDef className="android.bluetooth.BluetoothDevice" conditional="true" permissionRel="AllOf" target="ACTION_FOUND" targetKind="Field">
+    <comment>
+      * {@link #EXTRA_RSSI} if they are available.
+      * &lt;p&gt;Requires {@link android.Manifest.permission#BLUETOOTH} and
+      * {@link android.Manifest.permission#ACCESS_COARSE_LOCATION} to receive.
+      */
+    </comment>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.content.Intent" conditional="true" permissionRel="AllOf" target="ACTION_NEW_OUTGOING_CALL" targetKind="Field">
+    <comment>
+      * the call from being placed by setting resultData to &lt;code&gt;null&lt;/code&gt;
+      * and then start their own app to make the call.
+      * &lt;p&gt;You must hold the
+      * {@link android.Manifest.permission#PROCESS_OUTGOING_CALLS}
+      * permission to receive this Intent.&lt;/p&gt;
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+    </comment>
+    <permission name="android.permission.PROCESS_OUTGOING_CALLS"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.Sensor" conditional="true" permissionRel="AllOf" target="TYPE_HEART_RATE" targetKind="Field">
+    <comment>
+      * {@code SENSOR_STATUS_UNRELIABLE} or {@code SENSOR_STATUS_NO_CONTACT}, the heart rate
+      * value should be discarded.
+      * &lt;p&gt;
+      * This sensor requires permission {@code android.permission.BODY_SENSORS}.
+      * It will not be returned by {@code SensorManager.getSensorsList} nor
+      * {@code SensorManager.getDefaultSensor} if the application doesn't have this permission.
+    </comment>
+    <permission name="android.permission.BODY_SENSORS"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.location.GeofenceHardware" conditional="true" permissionRel="AllOf" target="boolean addGeofence(int, int, android.hardware.location.GeofenceHardwareRequest, android.hardware.location.GeofenceHardwareCallback)" targetKind="Method">
+    <comment>
+      * monitored by two different monitoring systems, the same id can be used for both calls, as
+      * long as the same callback object is used.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#ACCESS_FINE_LOCATION} permission when
+      * {@link #MONITORING_TYPE_GPS_HARDWARE} is used.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#LOCATION_HARDWARE} permission to access
+    </comment>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.location.GeofenceHardware" conditional="true" permissionRel="AllOf" target="boolean pauseGeofence(int, int)" targetKind="Method">
+    <comment>
+      * {@link GeofenceHardwareCallback#onGeofencePause} will be called with the result of the
+      * pause call from the hardware.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#ACCESS_FINE_LOCATION} permission when
+      * {@link #MONITORING_TYPE_GPS_HARDWARE} is used.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#LOCATION_HARDWARE} permission to access
+    </comment>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.location.GeofenceHardware" conditional="true" permissionRel="AllOf" target="boolean registerForMonitorStateChangeCallback(int, android.hardware.location.GeofenceHardwareMonitorCallback)" targetKind="Method">
+    <comment>
+      * monitoring system changes. For instance, it can change from
+      * {@link #MONITOR_CURRENTLY_AVAILABLE} to {@link #MONITOR_CURRENTLY_UNAVAILABLE}
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#ACCESS_FINE_LOCATION} permission when
+      * {@link #MONITORING_TYPE_GPS_HARDWARE} is used.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#LOCATION_HARDWARE} permission to access
+    </comment>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.location.GeofenceHardware" conditional="true" permissionRel="AllOf" target="boolean removeGeofence(int, int)" targetKind="Method">
+    <comment>
+      * {@link GeofenceHardwareCallback#onGeofenceRemove} will be called with the result of the
+      * remove call from the hardware.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#ACCESS_FINE_LOCATION} permission when
+      * {@link #MONITORING_TYPE_GPS_HARDWARE} is used.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#LOCATION_HARDWARE} permission to access
+    </comment>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.location.GeofenceHardware" conditional="true" permissionRel="AllOf" target="boolean resumeGeofence(int, int, int)" targetKind="Method">
+    <comment>
+      * {@link GeofenceHardwareCallback#onGeofenceResume} will be called with the result of the
+      * resume call from the hardware.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#ACCESS_FINE_LOCATION} permission when
+      * {@link #MONITORING_TYPE_GPS_HARDWARE} is used.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#LOCATION_HARDWARE} permission to access
+    </comment>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.location.GeofenceHardware" conditional="true" permissionRel="AllOf" target="boolean unregisterForMonitorStateChangeCallback(int, android.hardware.location.GeofenceHardwareMonitorCallback)" targetKind="Method">
+    <comment>
+      * Unregister the callback that was used with {@link #registerForMonitorStateChangeCallback}
+      * to notify when the state of the hardware geofence monitoring system changes.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#ACCESS_FINE_LOCATION} permission when
+      * {@link #MONITORING_TYPE_GPS_HARDWARE} is used.
+      *
+      * &lt;p&gt; Requires {@link android.Manifest.permission#LOCATION_HARDWARE} permission to access
+    </comment>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipAudioCall" conditional="true" permissionRel="AllOf" target="void startAudio()" targetKind="Method">
+    <comment>
+      * after {@link Listener#onCallEstablished} is called.
+      * &lt;p class="note"&gt;&lt;strong&gt;Note:&lt;/strong&gt; Requires the
+      *   {@link android.Manifest.permission#RECORD_AUDIO},
+      *   {@link android.Manifest.permission#ACCESS_WIFI_STATE} and
+      *   {@link android.Manifest.permission#WAKE_LOCK} permissions.&lt;/p&gt;
+    </comment>
+    <permission name="android.permission.RECORD_AUDIO"/>
+  </permissionDef>
+  <permissionDef className="android.provider.CallLog$Calls" conditional="true" permissionRel="AllOf" target="CONTENT_URI_WITH_VOICEMAIL" targetKind="Field">
+    <comment>
+      /**
+      * Content uri used to access call log entries, including voicemail records. You must have
+      * the READ_CALL_LOG and WRITE_CALL_LOG permissions to read and write to the call log, as
+      * well as READ_VOICEMAIL and WRITE_VOICEMAIL permissions to read and write voicemails.
+    </comment>
+    <permission name="android.permission.READ_CALL_LOG"/>
+    <permission name="android.permission.WRITE_CALL_LOG"/>
+  </permissionDef>
+  <permissionDef className="android.provider.MediaStore" conditional="true" permissionRel="AllOf" target="ACTION_IMAGE_CAPTURE" targetKind="Field">
+    <comment>
+      * &lt;p&gt;Note: if you app targets {@link android.os.Build.VERSION_CODES#M M} and above
+      * and declares as using the {@link android.Manifest.permission#CAMERA} permission which
+      * is not granted, then atempting to use this action will result in a {@link
+      * java.lang.SecurityException}.
+      *
+      *  @see #EXTRA_OUTPUT
+    </comment>
+    <permission name="android.permission.CAMERA"/>
+  </permissionDef>
+  <permissionDef className="android.provider.MediaStore" conditional="true" permissionRel="AllOf" target="ACTION_VIDEO_CAPTURE" targetKind="Field">
+    <comment>
+      * &lt;p&gt;Note: if you app targets {@link android.os.Build.VERSION_CODES#M M} and above
+      * and declares as using the {@link android.Manifest.permission#CAMERA} permission which
+      * is not granted, then atempting to use this action will result in a {@link
+      * java.lang.SecurityException}.
+      *
+      * @see #EXTRA_OUTPUT
+    </comment>
+    <permission name="android.permission.CAMERA"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.CarrierConfigManager" conditional="true" permissionRel="AllOf" target="android.os.PersistableBundle getConfig()" targetKind="Method">
+    <comment>
+      /**
+      * Gets the configuration values for the default subscription.
+      *
+      * &lt;p&gt;Requires Permission:
+      * {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      *
+      * @see #getConfigForSubId
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.CarrierConfigManager" conditional="true" permissionRel="AllOf" target="android.os.PersistableBundle getConfigForSubId(int)" targetKind="Method">
+    <comment>
+      * specific SIM card. If an invalid subId is used, the returned config will contain default
+      * values.
+      *
+      * &lt;p&gt;Requires Permission:
+      * {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      *
+      * @param subId the subscription ID, normally obtained from {@link SubscriptionManager}.
+      * @return A {@link PersistableBundle} containing the config for the given subId, or default
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.PhoneNumberUtils" conditional="true" permissionRel="AllOf" target="boolean isVoiceMailNumber(java.lang.String)" targetKind="Method">
+    <comment>
+      * isVoiceMailNumber: checks a given number against the voicemail
+      *   number provided by the RIL and SIM card. The caller must have
+      *   the READ_PHONE_STATE credential.
+      *
+      * @param number the number to look up.
+      * @return true if the number is in the list of voicemail. False
+      * otherwise, including if the caller does not have the permission
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.PhoneStateListener" conditional="true" permissionRel="AllOf" target="LISTEN_CALL_FORWARDING_INDICATOR" targetKind="Field">
+    <comment>
+      /**
+      * Listen for changes to the call-forwarding indicator.
+      * {@more}
+      * Requires Permission: {@link android.Manifest.permission#READ_PHONE_STATE
+      * READ_PHONE_STATE}
+      * @see #onCallForwardingIndicatorChanged
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.PhoneStateListener" conditional="true" permissionRel="AllOf" target="LISTEN_CELL_LOCATION" targetKind="Field">
+    <comment>
+      * Listen for changes to the device's cell location. Note that
+      * this will result in frequent callbacks to the listener.
+      * {@more}
+      * Requires Permission: {@link android.Manifest.permission#ACCESS_COARSE_LOCATION
+      * ACCESS_COARSE_LOCATION}
+      * &lt;p&gt;
+      * If you need regular location updates but want more control over
+      * the update interval or location precision, you can set up a listener
+    </comment>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.PhoneStateListener" conditional="true" permissionRel="AllOf" target="LISTEN_MESSAGE_WAITING_INDICATOR" targetKind="Field">
+    <comment>
+      /**
+      * Listen for changes to the message-waiting indicator.
+      * {@more}
+      * Requires Permission: {@link android.Manifest.permission#READ_PHONE_STATE
+      * READ_PHONE_STATE}
+      * &lt;p&gt;
+      * Example: The status bar uses this to determine when to display the
+      * voicemail icon.
+      *
+      * @see #onMessageWaitingIndicatorChanged
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.PhoneStateListener" conditional="true" permissionRel="AllOf" target="LISTEN_SIGNAL_STRENGTH" targetKind="Field">
+    <comment>
+      /**
+      * Listen for changes to the network signal strength (cellular).
+      * {@more}
+      * Requires Permission: {@link android.Manifest.permission#READ_PHONE_STATE
+      * READ_PHONE_STATE}
+      * &lt;p&gt;
+      *
+      * @see #onSignalStrengthChanged
+      *
+      * @deprecated by {@link #LISTEN_SIGNAL_STRENGTHS}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.PhoneStateListener" conditional="true" permissionRel="AllOf" target="void onCallStateChanged(int, java.lang.String)" targetKind="Method">
+    <comment>
+      * @param state call state
+      * @param incomingNumber incoming call phone number. If application does not have
+      * {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE} permission, an empty
+      * string will be passed as an argument.
+      *
+      * @see TelephonyManager#CALL_STATE_IDLE
+      * @see TelephonyManager#CALL_STATE_RINGING
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SmsManager" conditional="true" permissionRel="AllOf" target="void sendDataMessage(java.lang.String, java.lang.String, short, byte[], android.app.PendingIntent, android.app.PendingIntent)" targetKind="Method">
+    <comment>
+      * Send a data based SMS to a specific application port.
+      *
+      * &lt;p class="note"&gt;&lt;strong&gt;Note:&lt;/strong&gt; Using this method requires that your app has the
+      * {@link android.Manifest.permission#SEND_SMS} permission.&lt;/p&gt;
+      *
+      * @param destinationAddress the address to send the message to
+      * @param scAddress is the service center address or null to use
+    </comment>
+    <permission name="android.permission.SEND_SMS"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SmsManager" conditional="true" permissionRel="AllOf" target="void sendMultipartTextMessage(java.lang.String, java.lang.String, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList)" targetKind="Method">
+    <comment>
+      * &lt;code&gt;divideMessage&lt;/code&gt;.
+      *
+      * &lt;p class="note"&gt;&lt;strong&gt;Note:&lt;/strong&gt; Using this method requires that your app has the
+      * {@link android.Manifest.permission#SEND_SMS} permission.&lt;/p&gt;
+      *
+      * &lt;p class="note"&gt;&lt;strong&gt;Note:&lt;/strong&gt; Beginning with Android 4.4 (API level 19), if
+      * &lt;em&gt;and only if&lt;/em&gt; an app is not selected as the default SMS app, the system automatically
+    </comment>
+    <permission name="android.permission.SEND_SMS"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SmsManager" conditional="true" permissionRel="AllOf" target="void sendTextMessage(java.lang.String, java.lang.String, java.lang.String, android.app.PendingIntent, android.app.PendingIntent)" targetKind="Method">
+    <comment>
+      * Send a text based SMS.
+      *
+      * &lt;p class="note"&gt;&lt;strong&gt;Note:&lt;/strong&gt; Using this method requires that your app has the
+      * {@link android.Manifest.permission#SEND_SMS} permission.&lt;/p&gt;
+      *
+      * &lt;p class="note"&gt;&lt;strong&gt;Note:&lt;/strong&gt; Beginning with Android 4.4 (API level 19), if
+      * &lt;em&gt;and only if&lt;/em&gt; an app is not selected as the default SMS app, the system automatically
+    </comment>
+    <permission name="android.permission.SEND_SMS"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="ACTION_PHONE_STATE_CHANGED" targetKind="Field">
+    <comment>
+      * If the new state is RINGING, a second extra
+      * {@link #EXTRA_INCOMING_NUMBER} provides the incoming phone number as
+      * a String.
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;
+      * This was a {@link android.content.Context#sendStickyBroadcast sticky}
+      * broadcast in version 1.0, but it is no longer sticky.
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="android.telephony.CellLocation getCellLocation()" targetKind="Method">
+    <comment>
+      * @return Current location of the device or null if not available.
+      *
+      * &lt;p&gt;Requires Permission:
+      * {@link android.Manifest.permission#ACCESS_COARSE_LOCATION ACCESS_COARSE_LOCATION} or
+      * {@link android.Manifest.permission#ACCESS_COARSE_LOCATION ACCESS_FINE_LOCATION}.
+      */
+    </comment>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getDeviceId()" targetKind="Method">
+    <comment>
+      * or ESN for CDMA phones. Return null if device ID is not available.
+      *
+      * &lt;p&gt;Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getDeviceId(int)" targetKind="Method">
+    <comment>
+      * GSM and the MEID for CDMA phones. Return null if device ID is not available.
+      *
+      * &lt;p&gt;Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      *
+      * @param slotId of which deviceID is returned
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getDeviceSoftwareVersion()" targetKind="Method">
+    <comment>
+      * the IMEI/SV for GSM phones. Return null if the software version is
+      * not available.
+      *
+      * &lt;p&gt;Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getGroupIdLevel1()" targetKind="Method">
+    <comment>
+      * Returns the Group Identifier Level1 for a GSM phone.
+      * Return null if it is unavailable.
+      * &lt;p&gt;
+      * Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getLine1Number()" targetKind="Method">
+    <comment>
+      * Returns the phone number string for line 1, for example, the MSISDN
+      * for a GSM phone. Return null if it is unavailable.
+      * &lt;p&gt;
+      * Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      *   OR
+      *   {@link android.Manifest.permission#READ_SMS}
+      * &lt;p&gt;
+      * The default SMS app can also use this.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+    <permission name="android.permission.READ_SMS"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getSimSerialNumber()" targetKind="Method">
+    <comment>
+      * Returns the serial number of the SIM, if applicable. Return null if it is
+      * unavailable.
+      * &lt;p&gt;
+      * Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getSubscriberId()" targetKind="Method">
+    <comment>
+      * Returns the unique subscriber ID, for example, the IMSI for a GSM phone.
+      * Return null if it is unavailable.
+      * &lt;p&gt;
+      * Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getVoiceMailAlphaTag()" targetKind="Method">
+    <comment>
+      * Retrieves the alphabetic identifier associated with the voice
+      * mail number.
+      * &lt;p&gt;
+      * Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.lang.String getVoiceMailNumber()" targetKind="Method">
+    <comment>
+      * Returns the voice mail number. Return null if it is unavailable.
+      * &lt;p&gt;
+      * Requires Permission:
+      *   {@link android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE}
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.TelephonyManager" conditional="true" permissionRel="AllOf" target="java.util.List getAllCellInfo()" targetKind="Method">
+    <comment>
+      * be called.
+      *&lt;p&gt;
+      * @return List of CellInfo or null if info unavailable.
+      *
+      * &lt;p&gt;Requires Permission: {@link android.Manifest.permission#ACCESS_COARSE_LOCATION}
+      */
+    </comment>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.IccPhoneBookInterfaceManager" conditional="true" permissionRel="AllOf" target="boolean updateAdnRecordsInEfByIndex(int, java.lang.String, java.lang.String, int, java.lang.String)" targetKind="Method">
+    <comment>
+      * phone book or erase/format the whole phonebook. Currently the email field
+      * if set in the ADN record is ignored.
+      * throws SecurityException if no WRITE_CONTACTS permission
+      *
+      * @param efid must be one among EF_ADN, EF_FDN, and EF_SDN
+      * @param newTag adn tag to be stored
+      * @param newPhoneNumber adn number to be stored
+    </comment>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.IccPhoneBookInterfaceManager" conditional="true" permissionRel="AllOf" target="boolean updateAdnRecordsInEfBySearch(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" targetKind="Method">
+    <comment>
+      * otherwise an error will be returned. Currently the email field
+      * if set in the ADN record is ignored.
+      * throws SecurityException if no WRITE_CONTACTS permission
+      *
+      * @param efid must be one among EF_ADN, EF_FDN, and EF_SDN
+      * @param oldTag adn tag to be replaced
+      * @param oldPhoneNumber adn number to be replaced
+    </comment>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.IccPhoneBookInterfaceManager" conditional="true" permissionRel="AllOf" target="java.util.List getAdnRecordsInEf(int)" targetKind="Method">
+    <comment>
+      /**
+      * Loads the AdnRecords in efid and returns them as a
+      * List of AdnRecords
+      *
+      * throws SecurityException if no READ_CONTACTS permission
+      *
+      * @param efid the EF id of a ADN-like ICC
+      * @return List of AdnRecord
+      */
+    </comment>
+    <permission name="android.permission.READ_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_ANY_DATA_CONNECTION_STATE_CHANGED" targetKind="Field">
+    <comment>
+      *      The APN type {@code *} is a special type that means this APN services all types.&lt;/dd&gt;
+      * &lt;/dl&gt;
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_DATA_CONNECTION_CONNECTED_TO_PROVISIONING_APN" targetKind="Field">
+    <comment>
+      *   &lt;dt&gt;linkCapabilities&lt;/dt&gt;&lt;dd&gt;The {@code LinkCapabilities} for this APN.&lt;/dd&gt;
+      *   &lt;dt&gt;iface&lt;/dt&gt;&lt;dd&gt;A string that is the name of the interface.&lt;/dd&gt;
+      * &lt;/dl&gt;
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_DATA_CONNECTION_FAILED" targetKind="Field">
+    <comment>
+      *   &lt;dt&gt;reason&lt;/dt&gt;&lt;dd&gt;A string indicating the reason for the failure, if available.&lt;/dd&gt;
+      * &lt;/dl&gt;
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_NETWORK_SET_TIME" targetKind="Field">
+    <comment>
+      * &lt;ul&gt;
+      *   &lt;li&gt;&lt;em&gt;time&lt;/em&gt; - The time as a long in UTC milliseconds.&lt;/li&gt;
+      * &lt;/ul&gt;
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_NETWORK_SET_TIMEZONE" targetKind="Field">
+    <comment>
+      *   &lt;li&gt;&lt;em&gt;time-zone&lt;/em&gt; - The java.util.TimeZone.getID() value identifying the new time
+      *          zone.&lt;/li&gt;
+      * &lt;/ul&gt;
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_SERVICE_STATE_CHANGED" targetKind="Field">
+    <comment>
+      *          the network manually, and false indicates that network selection is handled by the
+      *          phone.&lt;/li&gt;
+      * &lt;/ul&gt;
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_SIGNAL_STRENGTH_CHANGED" targetKind="Field">
+    <comment>
+      * {@link android.content.Context#registerReceiver(android.content.BroadcastReceiver,
+      * android.content.IntentFilter) Context.registerReceiver()}.
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="com.android.internal.telephony.TelephonyIntents" conditional="true" permissionRel="AllOf" target="ACTION_SIM_STATE_CHANGED" targetKind="Field">
+    <comment>
+      *       &lt;dt&gt;{@code NETWORK}&lt;/dt&gt;&lt;dd&gt;locked on network personalization&lt;/dd&gt;
+      *   &lt;/dl&gt;
+      * &lt;/dl&gt;
+      *
+      * &lt;p class="note"&gt;
+      * Requires the READ_PHONE_STATE permission.
+      *
+      * &lt;p class="note"&gt;This is a protected intent that can only be sent
+      * by the system.
+      */
+    </comment>
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.Camera" conditional="true" permissionRel="AllOf" target="android.hardware.Camera open(int)" targetKind="Method">
+    <permission name="android.permission.CAMERA"/>
+  </permissionDef>
+  <permissionDef className="android.hardware.Camera" conditional="true" permissionRel="AllOf" target="android.hardware.Camera open()" targetKind="Method">
+    <permission name="android.permission.CAMERA"/>
+  </permissionDef>
+  <permissionDef className="android.media.audiofx.Visualizer" conditional="true" permissionRel="AllOf" target="void &lt;init&gt;(int)" targetKind="Method">
+    <permission name="android.permission.RECORD_AUDIO"/>
+  </permissionDef>
+  <permissionDef className="android.net.rtp.AudioGroup" conditional="true" permissionRel="AllOf" target="void &lt;init&gt;()" targetKind="Method">
+    <permission name="android.permission.RECORD_AUDIO"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="android.net.sip.SipSession createSipSession(android.net.sip.SipProfile, android.net.sip.SipSession$Listener)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="android.net.sip.SipSession getSessionFor(android.content.Intent)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="void open(android.net.sip.SipProfile)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="void open(android.net.sip.SipProfile, android.app.PendingIntent, android.net.sip.SipRegistrationListener)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="android.net.sip.SipAudioCall makeAudioCall(android.net.sip.SipProfile, android.net.sip.SipProfile, android.net.sip.SipAudioCall$Listener, int)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="android.net.sip.SipAudioCall makeAudioCall(java.lang.String, java.lang.String, android.net.sip.SipAudioCall$Listener, int)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="android.net.sip.SipAudioCall takeAudioCall(android.content.Intent, android.net.sip.SipAudioCall$Listener)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.net.sip.SipManager" conditional="true" permissionRel="AllOf" target="void register(android.net.sip.SipProfile, int, android.net.sip.SipRegistrationListener)" targetKind="Method">
+    <permission name="android.permission.USE_SIP"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract" conditional="true" permissionRel="AllOf" target="AUTHORITY_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$AggregationExceptions" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Callable" conditional="true" permissionRel="AllOf" target="CONTENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Callable" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Contactables" conditional="true" permissionRel="AllOf" target="CONTENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Contactables" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Email" conditional="true" permissionRel="AllOf" target="CONTENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Email" conditional="true" permissionRel="AllOf" target="CONTENT_LOOKUP_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Email" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Email" conditional="true" permissionRel="AllOf" target="ENTERPRISE_CONTENT_LOOKUP_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Phone" conditional="true" permissionRel="AllOf" target="CONTENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$Phone" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$CommonDataKinds$StructuredPostal" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_FREQUENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_GROUP_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_LOOKUP_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_MULTI_VCARD_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_STREQUENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_STREQUENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Contacts" conditional="true" permissionRel="AllOf" target="CONTENT_VCARD_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Data" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$DataUsageFeedback" conditional="true" permissionRel="AllOf" target="DELETE_USAGE_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$DataUsageFeedback" conditional="true" permissionRel="AllOf" target="FEEDBACK_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$DeletedContacts" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$DisplayPhoto" conditional="true" permissionRel="AllOf" target="CONTENT_MAX_DIMENSIONS_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$DisplayPhoto" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Groups" conditional="true" permissionRel="AllOf" target="CONTENT_SUMMARY_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Groups" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$PhoneLookup" conditional="true" permissionRel="AllOf" target="CONTENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$PhoneLookup" conditional="true" permissionRel="AllOf" target="ENTERPRISE_CONTENT_FILTER_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Profile" conditional="true" permissionRel="AllOf" target="CONTENT_RAW_CONTACTS_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Profile" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Profile" conditional="true" permissionRel="AllOf" target="CONTENT_VCARD_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$ProfileSyncState" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$ProviderStatus" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$RawContacts" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$RawContactsEntity" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$RawContactsEntity" conditional="true" permissionRel="AllOf" target="PROFILE_CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$Settings" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$StatusUpdates" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$StatusUpdates" conditional="true" permissionRel="AllOf" target="PROFILE_CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.ContactsContract$SyncState" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="android.permission.READ_CONTACTS"/>
+    <permission name="android.permission.WRITE_CONTACTS"/>
+  </permissionDef>
+  <permissionDef className="android.provider.VoicemailContract$Status" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="com.android.voicemail.permission.ADD_VOICEMAIL"/>
+  </permissionDef>
+  <permissionDef className="android.provider.VoicemailContract$Voicemails" conditional="true" permissionRel="AllOf" target="CONTENT_URI" targetKind="Field">
+    <permission name="com.android.voicemail.permission.ADD_VOICEMAIL"/>
+  </permissionDef>
+  <permissionDef className="android.speech.SpeechRecognizer" conditional="true" permissionRel="AllOf" target="android.speech.SpeechRecognizer createSpeechRecognizer(android.content.Context)" targetKind="Method">
+    <permission name="android.permission.RECORD_AUDIO"/>
+  </permissionDef>
+  <permissionDef className="android.speech.SpeechRecognizer" conditional="true" permissionRel="AllOf" target="android.speech.SpeechRecognizer createSpeechRecognizer(android.content.Context, android.content.ComponentName)" targetKind="Method">
+    <permission name="android.permission.RECORD_AUDIO"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="android.telephony.SubscriptionManager from(android.content.Context)" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="void addOnSubscriptionsChangedListener(android.telephony.SubscriptionManager$OnSubscriptionsChangedListener)" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="void removeOnSubscriptionsChangedListener(android.telephony.SubscriptionManager$OnSubscriptionsChangedListener)" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="android.telephony.SubscriptionInfo getActiveSubscriptionInfo(int)" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="android.telephony.SubscriptionInfo getActiveSubscriptionInfoForSimSlotIndex(int)" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="java.util.List getActiveSubscriptionInfoList()" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="int getActiveSubscriptionInfoCount()" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="int getActiveSubscriptionInfoCountMax()" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <permissionDef className="android.telephony.SubscriptionManager" conditional="true" permissionRel="AllOf" target="boolean isNetworkRoaming(int)" targetKind="Method">
+    <permission name="android.permission.READ_PHONE_STATE"/>
+  </permissionDef>
+  <checkerDefs/>
+  <requesterDefs/>
+  <parametricSensDefs/>
+</PermissionDefinitions>
