@@ -19,3 +19,9 @@ To run one one of Cartographer's analysis, use the following command format:
 for example: 
 
 `python3 flowdroid_luigi.py --apk-list-file ~/Desktop/list_apks.txt`
+
+### Reference:
+If you use Cartographer in any of your projects please reference our paper: 
+
+**What did Really Change with the new Release of the App?** by Paolo Calciati, Konstantin Kuznetsov, Xue Bai and Alessandra Gorla, published at MSR 2018
+https://software.imdea.org/~alessandra.gorla/papers/Calciati-AppEvolution-MSR18.pdf
